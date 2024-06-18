@@ -25,4 +25,12 @@
 
 1. You can also navigate to your resource group in Azure portal to verify the resources deployed.
 
+## Task 02: Deploy an Azure OpenAI Model
 
+1. Navigate to **Components > Deployments** settings and click on **Create Deployment** to create an OpenAI model.
+
+1. Select **gpt-4** from the list of models and click on **Confirm**.
+
+1. On the *Deploy model gpt-4* pane, configure the following details and click on **Deploy**.
+
+1. Verify that the **gpt-4** model is present in the Deployments section.
