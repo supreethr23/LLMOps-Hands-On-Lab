@@ -110,7 +110,15 @@
    }
    ```
 
+## Task 05: Work with an Open Source LLM Model
 
+1. Now let's test an open source Llama2 model from Meta. Navigate to **Components > Deployments** settings and click on **Create Deployment** to create an OpenAI model.
+
+1. Search for and select **Llama-2-13b-chat** from the list of models and click on **Confirm**.
+
+1. On the Deployments options tab, click on **Serverless API with Azure AI Content Safety**.
+
+1. On the **Serverless API deployment for Llama-2-13b-chat** tab, select your project and click on **Subscribe and Deploy**.
 
 
 
