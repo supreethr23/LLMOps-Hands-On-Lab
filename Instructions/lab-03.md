@@ -58,7 +58,13 @@
    - Table comparison:
    - Chart comparison:
 
+## Task 02: Deploy and Manage RAG Flow to an Online Endpoint
 
+1. In the Azure AI Studio, navigate to **Tools > Prompt flow** and select the **Multi-Round Q&A on Your Data** chat flow.
+
+1. Select **Deploy** on the flow editor.
+
+1. 
 
 
 
