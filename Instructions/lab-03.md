@@ -64,7 +64,20 @@
 
 1. Select **Deploy** on the flow editor.
 
-1. 
+1. On the **Basic settings** tab, configure the basic settings to deploy the endpoint in the deployment wizard and click on **Review + create**.
+
+   - Virtual Machine: **Standard_E2s_v3**
+   - Instance count: **1**
+
+1. On the **Review** tab, click on **Create** to deploy the prompt flow.
+
+1. To view the status of your deployment, select Deployments from the left navigation. Once the deployment is created successfully, you can select the deployment to view the details.
+
+   >**Note:** This might take a while for the deployment to succeed. Wait for the deployment to **Succeed**.
+
+1. Select the **Consume** tab to see code samples that can be used to consume the deployed model in your application.
+
+1. You can use the **REST endpoint** directly or get started with one of the samples.
 
 
 
