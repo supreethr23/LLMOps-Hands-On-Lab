@@ -11,6 +11,8 @@
 
 1. Click on **+ New Project** to create a new project and hub.
 
+   ![](media/create-new-project.png)
+
 1. On the Project Details section, enter a unique name for your project and click on **Next**.
 
 1. On the Create Hub section, configure the below values.
