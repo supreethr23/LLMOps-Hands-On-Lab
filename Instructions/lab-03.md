@@ -3,7 +3,7 @@
 
 ## Task 01: Evaluate Chat Flow Performance and Robustness
 
-1. Navigate to your **Multi-Round Q&A on Your Data** prompt flow in your Azure AI Studio.
+1. Navigate to your **Multi-Round Q&A on Your Data** prompt flow from the **Tools > Prompt flow** section in your Azure AI Studio.
 
 1. Create a new output named **documents** in the Outputs node. This output will represent the documents that were retrieved in the **lookup** node and subsequently formatted in the **generate_prompt_context** node. Assign the output of the generate_prompt_context node to the documents output
 
