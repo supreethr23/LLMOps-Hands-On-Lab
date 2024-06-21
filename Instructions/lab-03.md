@@ -144,7 +144,7 @@
 
 1. You can use the **REST endpoint** directly or get started with one of the samples.
 
-   ![](media/endpoint-samples.png)
+   ![](media/endpoint-deployment-samples.png)
 
 
 
