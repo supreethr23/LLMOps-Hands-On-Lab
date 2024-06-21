@@ -13,6 +13,8 @@
 
 1. Select the Evaluation Flow filter and click on **Clone** on the **QnA Groundedness Evaluation** card.
 
+   >**Note:** Click on **View more samples** on the top right of the **Create a new flow** window to get more sample evaluation flows.
+
 1. In the Clone flow window, accept the default folder name value and click on **Clone**.
 
 1. An Evaludation flow will be created with the following structure.
