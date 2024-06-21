@@ -25,6 +25,9 @@
 
    >**Note:** Note that the LLM nodes, where you will set the Azure OpenAI connection for each flow, have slightly different names: **relevance_score** and **similarity_score**, respectively.
 
+   - QnA Relevance Evaluation
+   - QnA GPT Similarity Evaluation
+
 1. In the Flows section of **Prompt Flow**, open the **Multi-Round Q&A on Your Data** flow that you created. This will be the flow we use for evaluation.
 
 1. Start the compute session if not started already.
