@@ -56,6 +56,8 @@
 
 1. The evaluation process has started. To view all evaluations (one per variant), navigate to the **Tools > Evaluation**.
 
+   >**Note:** Wait for the evaluation status to get **Completed**.
+
 1. Upon selecting specific evaluation results, you will have the ability to view their detailed information.
 
 1. You can also select **Switch to dashboard view** to access a dashboard that provides a tabular and visual comparison between the rounds of different variations.
