@@ -15,7 +15,11 @@
 
 1. On the Project Details section, enter a unique name for your project and click on **Next**.
 
+   ![](media/new-project-name.png)
+
 1. On the Create Hub section, configure the below values.
+
+   ![](media/create-new-hub.png)
 
 1. Click on **Create new AI Search** for the Connect Azure AI Search option. Enter the name for your Azure AI Search and click on **Create**.
 
@@ -23,9 +27,15 @@
 
 1. On the Create Hub section, click on **Next**.
 
+   ![](media/create-hub-next.png)
+
 1. On the Review and finish section, review your Azure AI services, click on **Create a project** and wait for the deployments to succeed.
 
+   ![](media/review-create-project.png)
+
 1. You can also navigate to your resource group in Azure portal to verify the resources deployed.
+
+   ![](media/azure-portal-resources.png)
 
 ## Task 02: Deploy an Azure OpenAI Model
 
@@ -49,6 +59,8 @@
 
 1. Navigate to Azure portal, search for **Content Safety**.
 
+   ![](media/search-content-safety.png)
+
 1. On the **Azure AI Serices | Content Safety** tab, click on **+ Create**.
 
    ![](media/+create-content-safety.png)
@@ -65,6 +77,8 @@
 ## Task 04: Use Azure AI Studio Playground
 
 1. In your Azure AI Studio, navigate to the **gpt-4** deployment under the Deployments settings.
+
+   ![](media/gpt-4-model-deployments.png)
 
 1. On the **gpt-4** deployment details, click on **Open in playground**.
 
@@ -86,7 +100,9 @@
 
    Only extract information that you're sure. If you're unsure, write "Unknown/Not Found" in the JSON file.
    ```
-   
+
+   ![](media/gpt-4-apply-changes.png)
+
    >**Note:** If you receive a *Update systems message?* pop-up, enable the **Do not show this again** and click on **Continue**.
 
    ![](media/update-sys-msg.png)
