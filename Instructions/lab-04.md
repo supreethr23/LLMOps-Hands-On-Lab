@@ -7,15 +7,21 @@
 
 1. On the **Details** tab, click on **Enable** within the *Enable generation quality monitoring* box.
 
+   ![](media/enable-monitoring.png)
+
 1. On the **Enable monitoring** window, select all the metrics to monitor, configure column mapping, select your Azure OpenAI Connection and Deployment and click on **Create**.
 
    >**Note:** Monitoring sets the default sampling rate at 10%. This means that if 100 requests are sent to your deployment, 10 get sampled and used to compute the generation quality metrics. You can adjust the sampling rate in the settings.
+
+   ![](media/enable-monitoring-create.png)
 
 1. On the **Operational** tab, view the operational metrics for the deployment in near real-time. The supported metrics are:
 
    - Request count
    - Latency
    - Error rate
+  
+   ![](media/monitoring-operational-tab.png)
 
 1. The results in the Monitoring (preview) tab of your deployment provide insights to help you proactively improve the performance of your prompt flow application.
 
