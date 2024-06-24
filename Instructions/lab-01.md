@@ -169,7 +169,17 @@
 
 ## Task 06: Test the prompt in Content Safety
 
-1. 
+1. On your Azure AI Studio, navigate to **AI Services** and click on the **Content Safety** box to get started with Content Safety Studio.
+
+1. On the **Content Safety** studio, click on the **Moderate Text Content** to try out the prompt.
+
+1. On the **Moderate Text Content** window, select the content safety resource from the **Azure AI Services** dropdown.
+
+1. In the **Test** section, copy and paste the below text in the text box and click on **Run test**.
+
+1. In the **View Results** section, notice how the content safety resource blocks the content because the **Violence** filter is triggered with the provided content.
+
+1. You can configure the **Threshold level** for the four categories and test out different prompts.
 
 
 
