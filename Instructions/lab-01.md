@@ -5,6 +5,8 @@
 
 1. Navigate to https://ai.azure.com to create a project in Azure AI Studio.
 
+   ![](media/azure-ai-studio.png)
+
 1. Sign in to Azure AI Studio using the credentials from the **Environment** tab.
 
 1. Click on **+ New Project** to create a new project and hub.
@@ -155,47 +157,111 @@
 
 1. Now let's test an open source Llama2 model from Meta. Navigate to **Components > Deployments** settings and click on **Create Deployment** to create an OpenAI model.
 
+   ![](media/deployments-create.png)
+
 1. Search for and select **Llama-2-13b-chat** from the list of models and click on **Confirm**.
+
+   ![](media/llama-chat-model-confirm.png)
 
 1. On the Deployments options tab, click on **Serverless API with Azure AI Content Safety**.
 
+   ![](media/llama-serverless-api.png)
+
 1. On the **Serverless API deployment for Llama-2-13b-chat** tab, select your project and click on **Subscribe and Deploy**.
+
+   ![](media/llama-subs-and-deploy.png)
 
 1. Once the **Serverless API deployment for Llama-2-13b-chat** deployment succeeds, click on **Deploy** on the **Deploy Llama-2-13b-chat**.
 
+   ![](media/llama-chat-model-deploy.png)
+
 1. Wait for the chat model provisioning state to get **Succeeded** before using the deployment.
 
+   ![](media/llama-provisioning-state.png)
+
 1. On the **Llama-2-13b-chat** deployment details, click on **Open in playground** to start using the Open Source LLM Model.
+
+   ![](media/llama-open-in-playground.png)
 
 ## Task 06: Test the prompt in Content Safety
 
 1. On your Azure AI Studio, navigate to **AI Services** and click on the **Content Safety** box to get started with Content Safety Studio.
 
+   ![](media/ai-services-content-safety.png)
+
 1. On the **Content Safety** studio, click on the **Moderate Text Content** to try out the prompt.
+
+   ![](media/content-safety-studio.png)
 
 1. On the **Moderate Text Content** window, select the content safety resource from the **Azure AI Services** dropdown.
 
+   ![](media/content-safety-resource-select.png)
+
 1. In the **Test** section, copy and paste the below text in the text box and click on **Run test**.
+
+   ![](media/content-safety-run-test.png)
 
 1. In the **View Results** section, notice how the content safety resource blocks the content because the **Violence** filter is triggered with the provided content.
 
+   ![](media/content-safety-view-results.png)
+
 1. You can configure the **Threshold level** for the four categories and test out different prompts.
+
+   ![](media/content-safety-threshold-level.png)
 
 ## Task 07: Create a Prompt Flow
 
 1. Navigate to the **gpt-4** deployment under the Deployments settings in your Azure AI Studio.
 
+   ![](media/gpt-4-model-deployments.png)
+
 1. Perform the same steps that you performed in **Task 04** by adding the same system message, applying the changes and fetching the response. Once the response is generated, click on **Prompt flow**.
+
+   ![](media/chat-playground-prompt-flow.png)
 
 1. On the **Orchestrate and customize this setup with promt flow**, click on **Open**. This will create a new prompt flow.
 
+   ![](media/prompt-flow-open.png)
+
 1. Notice how the prompt flow is created with a single node, which represents the step in the flow where the LLM model is configured.
+
+   ![](media/prompt-flow-graph.png)
 
 1. Once the new prompt flow opens, click on **Start compute session** before you start using the chat session.
 
+   ![](media/prompt-flow-start-compute.png)
+
 1. Configure the connection settings with the AI service and the gpt-4 deployment for the **chat** node and then click on **Chat** button to test your flow in the chat window.
 
+   ![](media/prompt-flow-connection-chat.png)
+
 1. In the chat window, copy and paste the below conversation and click on send to view the expected response.
+
+   ```
+   Agent: Hello, welcome to Telco's customer service. My name is Juan, how can I assist you?
+   Client: Hello, Juan. I'm calling because I'm having issues with my mobile data plan. It's very slow and I can't browse the internet or use my apps.
+   Agent: I'm very sorry for the inconvenience, sir. Could you please tell me your phone number and your full name?
+   Client: Yes, sure. My number is 011-4567-8910 and my name is Martín Pérez.
+   Agent: Thank you, Mr. Pérez. I'm going to check your plan and your data usage. One moment, please.
+   Client: Okay, thank you.
+   Agent: Mr. Pérez, I've reviewed your plan and I see that you have contracted the basic plan of 2 GB of data per month. Is that correct?
+   Client: Yes, that's correct.
+   Agent: Well, I inform you that you have consumed 90% of your data limit and you only have 200 MB available until the end of the month. That's why your browsing speed has been reduced.
+   Client: What? How is that possible? I barely use the internet on my cell phone. I only check my email and my social networks from time to time. I don't watch videos or download large files.
+   Agent: I understand, Mr. Pérez. But keep in mind that some applications consume data in the background, without you realizing it. For example, automatic updates, backups, GPS, etc.
+   Client: Well, but they didn't explain that to me when I contracted the plan. They told me that with 2 GB I would have enough for the whole month. I feel cheated.
+   Agent: I apologize, Mr. Pérez. It was not our intention to deceive you. I offer you a solution: if you want, you can change your plan to a higher one, with more GB of data and higher speed. This way you can enjoy a better browsing experience.
+   Client: And how much would that cost me?
+   Agent: We have a special offer for you. For only 10 pesos more per month, you can access the premium plan of 5 GB of data and 4G speed. Are you interested?
+   Client: Mmm, I don't know. Isn't there another option? Can't you give me more speed without charging me more?
+   Agent: I'm sorry, Mr. Pérez. That's the only option we have available. If you don't change your plan, you'll have to wait until next month to recover your normal speed. Or you can buy an additional data package, but it would be more expensive than changing plans.
+   Client: Well, let me think about it. Can I call later to confirm?
+   Agent: Of course, Mr. Pérez. You can call whenever you want. The number is the same one you dialed now. Is there anything else I can help you with?
+   Client: No, that's all. Thank you for your attention.
+   Agent: Thank you, Mr. Pérez. Have a good day. Goodbye.
+   ```
+
+   ![](media/prompt-flow-chat-response.png)
 
 
 
