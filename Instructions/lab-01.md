@@ -67,6 +67,8 @@
 
 1. On the Create Content Safety **Basics** tab, configure the following resoures and click on **Next**.
 
+   >**Note:** Create the Content Safety resource in the same region where you have deployed the Azure AI services.
+
    ![](media/create-content-safety.png)
 
 1. On the **Identity** tab, verify that the System assigned managed identity Status is turned **On**. Click on **Review + create** and then **Create**.
