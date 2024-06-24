@@ -181,7 +181,21 @@
 
 1. You can configure the **Threshold level** for the four categories and test out different prompts.
 
+## Task 07: Create a Prompt Flow
 
+1. Navigate to the **gpt-4** deployment under the Deployments settings in your Azure AI Studio.
+
+1. Perform the same steps that you performed in **Task 04** by adding the same system message, applying the changes and fetching the response. Once the response is generated, click on **Prompt flow**.
+
+1. On the **Orchestrate and customize this setup with promt flow**, click on **Open**. This will create a new prompt flow.
+
+1. Notice how the prompt flow is created with a single node, which represents the step in the flow where the LLM model is configured.
+
+1. Once the new prompt flow opens, click on **Start compute session** before you start using the chat session.
+
+1. Configure the connection settings with the AI service and the gpt-4 deployment for the **chat** node and then click on **Chat** button to test your flow in the chat window.
+
+1. In the chat window, copy and paste the below conversation and click on send to view the expected response.
 
 
 
