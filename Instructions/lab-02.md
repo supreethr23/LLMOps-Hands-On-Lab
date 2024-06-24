@@ -151,10 +151,10 @@
 1. Everything is now set up for you to initiate your chat flow. Simply click on the blue **Chat** button located at the top right corner of your page to begin interacting with the flow.
 
    ![](media/multi-rag-flow-chat.png)
-
-   ![](media/multi-rag-flow-chat-box.png)
    
 1. Ask questions in regards to the PDF in the Chat box to get the relevant answers.
+
+   ![](media/multi-rag-flow-chat-box.png)
 
 
 
