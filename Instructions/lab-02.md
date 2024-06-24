@@ -5,11 +5,19 @@
 
 1. In the Azure AI Studio, navigate to **Tools > Prompt flow** and click on **+ Create**.
 
+   ![](media/+create-prompt-flow.png)
+
 1. In the flow creation window, select the **Standard flow** filter in the **Explore gallery** section and click on **Clone** for the Web Classification.
+
+   ![](media/web-classification-clone.png)
 
 1. In the Clone flow window, accept the default folder name value and click on **Clone**.
 
+    ![](media/web-clone-flow.png)
+
 1. A Standard flow will be created with the following structure.
+
+    ![](media/web-classification-flow.png)
 
 1. Notice that the flow has five nodes:
 
@@ -20,19 +28,29 @@
   
 1. Now that the flow has been created, we need a runtime to execute it in the Prompt Flow. Select **Start Compute Session** to start a runtime to run your flow.
 
+    ![](media/multi-round-start-compute.png)
+
    >**Note:** It will take 1-3 minutes to start the session.
 
 1. After starting the Runtime, we need to define the Connection with the LLM for each LLM step. In our case, these are **summarize_text_content** and **classify_with_llm**.
 
 1. We will use the Default_AzureOpenAI Connection and **gpt-4** dpeloyment, which connects to the Azure OpenAI resource that was created when the Azure AI project was set up.
 
+   ![](media/chat-with-context.png)
+
 1. Associate the same Connection for the **classify_with_llm** step.
+
+   ![](media/web-classify-with-llm.png)
 
    >**Note:** You can leave the **response_format** field in **blank** or select the **{"type":"text"}**.
 
 1. Once the Runtime is selected and the Connections are configured, you can start the flow by clicking the **Run** button at the top of the page.
 
+   ![](media/web-classification-run.png)
+
 1. After finishing the execution you will see that the flow is complete with all steps.
+
+   ![](media/web-flow-completed-steps.png)
 
 1. You can view the result of the processing by clicking the last node.
 
@@ -40,17 +58,27 @@
 
 1. In the Azure AI Studio, navigate to **Tools > Prompt flow** and click on **+ Create**.
 
+   ![](media/multi-rag-flow.png)
+
 1. In the flow creation window, select the **Chat flow** filter in the **Explore gallery** section and click on **Clone** for the Multi-Round Q&A on Your Data.
+
+   ![](media/multi-round-chat-flow-clone.png)
 
 1. In the Clone flow window, accept the default folder name value and click on **Clone**.
 
 1. A Chat flow will be created with the following structure.
 
+   ![](media/multi-round-flow.png)
+
 1. Select **Start Compute Session** to start a runtime to run your flow.
+
+   ![](media/multi-round-start-compute.png)
 
    >**Note:** It will take 1-3 minutes to start the session.
 
 1. Click the **Save** button to save your flow.
+
+   ![](media/multi-round-save.png)
 
 1. Flow overview:
 
@@ -64,38 +92,68 @@
 
 1. Navigate to **Components > Indexes** and click on **+ New Index** to create a new vector index.
 
+   ![](media/+create-new-index.png)
+
 1. On the Source Data tab, select **Upload files** from the dropdown and upload the PDF **surface-pro-4-user-guide-EN.pdf** from your Labfiles and click on **Next**.
+
+   ![](media/upload-files-indexes.png)
 
 1. On the Index Settings tab, select **Connect other Azure AI Search resource** from the Select Azure AI Search Service dropdown.
 
+   ![](media/connect-ai-resource-indexes.png)
+
 1. On the **Connect an existing resource** window, click on **Add connection**.
 
+   ![](media/add-connection-indexes.png)
+
 1. Back on the Create an Index window, on the Index Settings tab, accept the default values for name and auto-select VM and click on **Next**.
+   
+   ![](media/auto-select-vm-indexes.png)
 
 1. On the Search Settings tab, verify that the **Add vector search to this search resource** is selected.
 
    >**Note:** Azure OpenAI embedding model, **text-embedding-ada-002** (Version 2), will be deployed if not already.
 
+   ![](media/add-vector-indexes.png)
+
 1. On the Review and finish tab, review your settings and click on **Create**.
 
    >**Note:** The indexing job will be created and submitted for execution. It may take about 10 minutes from the time it enters the execution queue until it starts.
 
+   ![](media/review-create-index.png)
+
 1. Wait until the index status is **Completed** before proceeding with the next steps.
+
+   ![](media/index-complete-status.png)
 
 1. Now return to the RAG flow created in Prompt flow to configure the **lookup** node.
 
 1. After selecting the **lookup** node, click on **mlindex_content** value.
 
+   ![](media/lookup-node-mlindex.png)
+
 1. On the **Generate** window, select **Registered Index** from the index_type dropdown, select your recently created vector index and click on **Save**.
+
+   ![](media/generate-index-save.png)
 
 1. Back on the **lookup** node, select the **Hybrid (vector + keyword)** option from the **query_type** field.
 
+   ![](media/lookup-node-query-type.png)
+
 1. Now, let us define the connections of the nodes that link with LLM models. Select your default connection value from the dropdown and select **gpt-4** for the deployment name for both **modify_query_with_history** and **chat_with_context** nodes.
+
+   ![](media/web-summarize-text-content.png)
+
+   ![](media/web-classify-with-llm.png)
 
 1. Click on **Save** after configuring the connections for the nodes.
 
 1. Everything is now set up for you to initiate your chat flow. Simply click on the blue **Chat** button located at the top right corner of your page to begin interacting with the flow.
 
+   ![](media/multi-rag-flow-chat.png)
+
+   ![](media/multi-rag-flow-chat-box.png)
+   
 1. Ask questions in regards to the PDF in the Chat box to get the relevant answers.
 
 
