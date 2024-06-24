@@ -7,8 +7,6 @@
 
 1. Sign in to Azure AI Studio using the credentials from the **Environment** tab.
 
-1. After logging in with your Azure account, you will see the following screen:
-
 1. Click on **+ New Project** to create a new project and hub.
 
    ![](media/create-new-project.png)
@@ -163,6 +161,15 @@
 
 1. On the **Serverless API deployment for Llama-2-13b-chat** tab, select your project and click on **Subscribe and Deploy**.
 
+1. Once the **Serverless API deployment for Llama-2-13b-chat** deployment succeeds, click on **Deploy** on the **Deploy Llama-2-13b-chat**.
+
+1. Wait for the chat model provisioning state to get **Succeeded** before using the deployment.
+
+1. On the **Llama-2-13b-chat** deployment details, click on **Open in playground** to start using the Open Source LLM Model.
+
+## Task 06: Test the prompt in Content Safety
+
+1. 
 
 
 
