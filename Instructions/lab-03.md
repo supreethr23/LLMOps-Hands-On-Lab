@@ -67,7 +67,7 @@
 
    ![](media/custom-evaluation-add-new-data.png)
 
-1. On the **Add new data** pane, enter a name for your data, click on **Browse** to choose a file and upload the **data.csv** file from yout labvm and click on **Add**.
+1. On the **Add new data** pane, enter a name for your data, click on **Browse** to choose a file and upload the **data.csv** file from the **C:\LabFiles** folder and click on **Add**.
 
    ![](media/custom-evaluation-add-new-data-01.png)
 
@@ -92,6 +92,8 @@
    ![](media/custom-evaluation-groundedness-conifg.png)
      
    - QnA Relevance Evaluation
+  
+   ![](media/custom-evaluation-relevance-conifg.png)
 
 1. Once you have configured all the three evalution settings, click on **Review + submit** and then **Submit**.
 
