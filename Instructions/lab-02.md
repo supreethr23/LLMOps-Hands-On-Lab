@@ -94,7 +94,7 @@
 
    ![](media/+create-new-index.png)
 
-1. On the Source Data tab, select **Upload files** from the dropdown and upload the PDF **surface-pro-4-user-guide-EN.pdf** from your Labfiles and click on **Next**.
+1. On the Source Data tab, select **Upload files** from the dropdown and upload the PDF **surface-pro-4-user-guide-EN.pdf** from your **C:\LabFiles** folder and click on **Next**.
 
    ![](media/upload-files-indexes.png)
 
