@@ -69,7 +69,7 @@
 
    ![](media/+create-content-safety.png)
 
-1. On the Create Content Safety **Basics** tab, configure the following resoures and click on **Next**.
+1. On the Create Content Safety **Basics** tab, configure the following resources and click on **Next**.
 
    >**Note:** Create the Content Safety resource in the same region where you have deployed the Azure AI services.
 
