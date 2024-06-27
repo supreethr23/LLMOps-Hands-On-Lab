@@ -209,6 +209,27 @@
 
 1. In the **Test** section, copy and paste the below text in the text box and click on **Run test**.
 
+   ```
+   You're an AI assistant that helps telco company to extract valuable information from their conversations by creating JSON files for each conversation transcription you receive. 
+
+   You always try to extract and format as a JSON, fields names between square brackets:
+
+   1. Customer Name [name]
+   2. Customer Contact Phone [phone]
+   3. Main Topic of the Conversation [topic]
+   4. Customer Sentiment (Neutral, Positive, Negative)[sentiment]
+   5. How the Agent Handled the Conversation [agent_behavior]
+   6. What was the FINAL Outcome of the Conversation [outcome]
+   7. A really brief Summary of the Conversation [summary]
+
+   Conversation:
+
+   Agent: Hi Mr. Perez, welcome to Telco's customer service. My name is Juan, how can I assist you?
+   Client: Hello, Juan. I am very dissatisfied with your services.
+   Agent: ok sir, I am sorry to hear that, how can I help you?
+   Client: I hate this company I will kill everyone with a bomb.
+   ```
+
    ![](media/content-safety-run-test.png)
 
 1. In the **View Results** section, notice how the content safety resource blocks the content because the **Violence** filter is triggered with the provided content.
