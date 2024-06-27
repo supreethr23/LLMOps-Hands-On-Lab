@@ -34,7 +34,7 @@
 
 1. After starting the Runtime, we need to define the Connection with the LLM for each LLM step. In our case, these are **summarize_text_content** and **classify_with_llm**.
 
-1. We will use the Default_AzureOpenAI Connection and **gpt-4** dpeloyment, which connects to the Azure OpenAI resource that was created when the Azure AI project was set up.
+1. We will use the Default_AzureOpenAI Connection and **gpt-4** deployment, which connects to the Azure OpenAI resource that was created when the Azure AI project was set up.
 
    ![](media/chat-with-context.png)
 
