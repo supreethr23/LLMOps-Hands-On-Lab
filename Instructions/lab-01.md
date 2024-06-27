@@ -19,6 +19,10 @@
 
 1. On the Create Hub section, configure the below values.
 
+   - Subscription: **Select your Default Subscription**
+   - Resource group: **llm-ops-<inject key="Deployment-ID" enableCopy="false"/>**
+   - Location: **<inject key="Region" enableCopy="false"/>**
+
    ![](media/create-new-hub.png)
 
 1. Click on **Create new AI Search** for the Connect Azure AI Search option. Enter the name for your Azure AI Search and click on **Create**.
@@ -68,6 +72,12 @@
 1. On the Create Content Safety **Basics** tab, configure the following resoures and click on **Next**.
 
    >**Note:** Create the Content Safety resource in the same region where you have deployed the Azure AI services.
+
+   - Subscription: **Select your Default Subscription**
+   - Resource group: **llm-ops-<inject key="Deployment-ID" enableCopy="false"/>**
+   - Region: **<inject key="Region" enableCopy="false"/>**
+   - Name: **content-safety-<inject key="Deployment-ID" enableCopy="false"/>**
+   - Pricing tier: **Standard S0**
 
    ![](media/create-content-safety.png)
 
