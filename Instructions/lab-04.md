@@ -74,7 +74,7 @@
 
    ![](media/content_safety-check-name-add.png)
 
-1. Navigate to the **LabFiles** folder to locate the **content_safety_check.py** file. Copy the content of this file into the **content_safety_check** node, click on **Validate and parse input** and configure the input1 value as **${content_safety.output}**.
+1. Navigate to the **C:\LabFiles** folder to locate the **content_safety_check.py** file. Copy the content of this file into the **content_safety_check** node, click on **Validate and parse input** and configure the **input1** value as **${content_safety.output}**.
 
    ![](media/config-content-safety-check.png)
 
@@ -82,7 +82,7 @@
 
    ![](media/generate-result-name-add.png)
 
-1. Navigate to the **LabFiles** folder to locate the **generate_result.py** file. Copy the content of this file into the **generate_result** node, click on **Validate and parse input** and configure the following inputs.
+1. Navigate to the **C:\LabFiles** folder to locate the **generate_result.py** file. Copy the content of this file into the **generate_result** node, click on **Validate and parse input** and configure the following inputs.
 
    - default_result: **${content_safety_check.output}**
    - llm_result: **${joke.output}**
