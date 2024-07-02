@@ -23,7 +23,7 @@
   
    ![](media/monitoring-operational-tab.png)
 
-1. The results in the Monitoring (preview) tab of your deployment provide insights to help you proactively improve the performance of your prompt flow application.
+1. The results in the **Monitoring (preview)** tab of your deployment provide insights to help you proactively improve the performance of your prompt flow application.
 
 ## Task 02: Add Content Safety to your Solution
 
