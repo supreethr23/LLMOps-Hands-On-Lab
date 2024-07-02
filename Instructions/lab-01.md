@@ -41,7 +41,7 @@
 
    ![](media/azure-portal-resources.png)
 
-## Task 02: Deploy an Azure OpenAI Model
+## Task 02: Deploy Azure OpenAI Models
 
 1. Navigate to **Components > Deployments** settings and click on **Create Deployment** to create an OpenAI model.
    
@@ -51,13 +51,21 @@
 
    ![](media/gpt-4-deployment.png)
 
-1. On the *Deploy model gpt-4* pane, configure the following details and click on **Deploy**.
+1. On the *Deploy model gpt-4* pane, accept the default settings and click on **Deploy**.
 
-   ![](media/deploy-gpt-4-model.png)
+   ![](media/deploy-gpt-4-model01.png)
 
 1. Verify that the **gpt-4** model is present in the Deployments section.
 
    ![](media/gpt-4-model-deployments.png)
+
+1. On the **Components > Deployments** settings and click on **Create Deployment** to create an OpenAI model.
+
+1. Select **text-embedding-ada-002** from the list of models and click on **Confirm**.
+
+1. On the *Deploy model text-embedding-ada-002* pane, accept the default settings and click on **Deploy**.
+
+1. Verify that the **text-embedding-ada-002** model is present in the Deployments section.
 
 ## Task 03: Create a Content Safety Service
 
@@ -85,8 +93,21 @@
 
    ![](media/create-content-safety-identity.png)
 
+## Task 04: Create a Azure Content Safety connection
 
-## Task 04: Use Azure AI Studio Playground
+1. Navigate to your **odl_user_<inject key="Deployment-ID" enableCopy="false"/>-XXXX** project in Azure AI Studio.
+
+1. On the project overview, navigate on **Settings** and click on **+ New connection** under Connected resources.
+
+1. On the *Add a connection to external assests* pane, click on **Azure AI Content Safety**.
+
+1. On the *Connect an Azure AI Content Safety resource* pane, click on **Add connection** for the existing Content Safety resource that you created in the previous task.
+
+1. Once the status shows as **Connected**, click on **Close**.
+
+1. Navigate back to the **Settings > Connected resources** to verify the Azure Content Safety connection.
+
+## Task 05: Use Azure AI Studio Playground
 
 1. In your Azure AI Studio, navigate to the **gpt-4** deployment under the Deployments settings.
 
@@ -163,7 +184,7 @@
    
    ![](media/chat-msg-result.png)
    
-## Task 05: Work with an Open Source LLM Model
+## Task 06: Work with an Open Source LLM Model
 
 1. Now let's test an open source Llama2 model from Meta. Navigate to **Components > Deployments** settings and click on **Create Deployment** to create an OpenAI model.
 
@@ -193,7 +214,7 @@
 
    ![](media/llama-open-in-playground.png)
 
-## Task 06: Test the prompt in Content Safety
+## Task 07: Test the prompt in Content Safety
 
 1. On your Azure AI Studio, navigate to **AI Services** and click on the **Content Safety** box to get started with Content Safety Studio.
 
@@ -240,7 +261,7 @@
 
    ![](media/content-safety-threshold-level.png)
 
-## Task 07: Create a Prompt Flow
+## Task 08: Create a Prompt Flow
 
 1. Navigate to the **gpt-4** deployment under the Deployments settings in your Azure AI Studio.
 
