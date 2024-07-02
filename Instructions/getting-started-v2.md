@@ -16,29 +16,29 @@ Your virtual machine is your workhorse throughout the workshop. The lab guide is
  
 To get a better understanding of your lab resources and credentials, navigate to the **Environment** tab.
  
-  ![](../media/env01.png)
+  ![](media/env-01.png)
  
 ## Utilizing the Split Window Feature
  
 For convenience, you can open the lab guide in a separate window by selecting the **Split Window** button from the Top right corner.
  
-  ![](../media/split01.png)
+  ![](media/split-01.png)
  
 ## Managing Your Virtual Machine
  
 Feel free to start, stop, or restart your virtual machine as needed from the **Resources** tab. Your experience is in your hands!
 
-  ![](../media/resourses.png)
+  ![](media/resourses.png)
 
 ## Lab Validation
 
 1. After completing the task, hit the **Validate** button under Validation tab integrated within your lab guide. If you receive a success message, you can proceed to the next task, if not, carefully read the error message and retry the step, following the instructions in the lab guide.
 
-   ![Inline Validation](../media/inline-validation.png)
+   ![Inline Validation](media/inline-validation-01.png)
 
 1. You can also validate the task by navigating to the **Lab Validation** tab, from the upper right corner in the lab guide section.
 
-   ![Lab Validation](../media/lab-validation.png)
+   ![Lab Validation](media/lab-validation-01.png)
 
 1. If you need any assistance, please contact us at labs-support@spektrasystems.com.
 
@@ -46,23 +46,23 @@ Feel free to start, stop, or restart your virtual machine as needed from the **R
  
 1. On your virtual machine, click on the **Azure Portal** icon as shown below:
  
-    ![](../media/azure-portal-edge.png)
+    ![](media/azure-portal-edge.png)
 
 1. On the **Sign in to Microsoft Azure** tab you will see the login screen, in that enter the following email/username, and click on **Next**. 
 
    * **Email/Username**: <inject key="AzureAdUserEmail"></inject>
    
-      ![](../media/user-email.png "Enter Email")
+      ![](media/user-email.png "Enter Email")
      
 1. Now enter the following password and click on **Sign in**.
    
    * **Password**: <inject key="AzureAdUserPassword"></inject>
    
-      ![](../media/user-pass.png "Enter Password")
+      ![](media/user-pass.png "Enter Password")
 
 1. If you see the pop-up Action Required, click Ask Later.
 
-   ![](../media/asklater.png)
+   ![](media/asklater.png)
      
 1. If you see the pop-up **Stay Signed in?**, select **No**.
 
@@ -72,6 +72,6 @@ Feel free to start, stop, or restart your virtual machine as needed from the **R
    
 1. Now, click on **Next** from the lower right corner to move on to the next page.
 
-   ![](../media/lab-next.png)
+   ![](media/lab-next.png)
  
 Now you're all set to explore the powerful world of technology. Feel free to reach out if you have any questions along the way. Enjoy your workshop!
