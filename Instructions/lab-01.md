@@ -99,7 +99,7 @@
 
    ![](media/create-content-safety-identity.png)
 
-## Task 04: Create a Azure Content Safety connection
+## Task 04: Add an Azure Content Safety connection
 
 1. Navigate to your **odl_user_<inject key="Deployment-ID" enableCopy="false"/>-XXXX** project in Azure AI Studio.
 
