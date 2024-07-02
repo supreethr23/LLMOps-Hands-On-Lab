@@ -63,9 +63,15 @@
 
 1. Select **text-embedding-ada-002** from the list of models and click on **Confirm**.
 
+   ![](media/text-embedding-model.png)
+
 1. On the *Deploy model text-embedding-ada-002* pane, accept the default settings and click on **Deploy**.
 
+   ![](media/deploy-text-embedding-model.png)
+
 1. Verify that the **text-embedding-ada-002** model is present in the Deployments section.
+
+   ![](media/text-embedding-model-deployments.png)
 
 ## Task 03: Create a Content Safety Service
 
@@ -97,15 +103,27 @@
 
 1. Navigate to your **odl_user_<inject key="Deployment-ID" enableCopy="false"/>-XXXX** project in Azure AI Studio.
 
+   ![](media/project-select.png)
+
 1. On the project overview, navigate on **Settings** and click on **+ New connection** under Connected resources.
+
+   ![](media/project-new-connection.png)
 
 1. On the *Add a connection to external assests* pane, click on **Azure AI Content Safety**.
 
+   ![](media/select-content-safety-connection.png)
+
 1. On the *Connect an Azure AI Content Safety resource* pane, click on **Add connection** for the existing Content Safety resource that you created in the previous task.
+
+   ![](media/add-content-safety-connection.png)
 
 1. Once the status shows as **Connected**, click on **Close**.
 
+   ![](media/review-content-safety-connection.png)
+
 1. Navigate back to the **Settings > Connected resources** to verify the Azure Content Safety connection.
+
+   ![](media/confirm-content-safety-connection.png)
 
 ## Task 05: Use Azure AI Studio Playground
 
