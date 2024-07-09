@@ -391,7 +391,7 @@ After completing this lab, you will be able to complete the following tasks:
 
    ![](media/prompt-flow-chat-response.png)
 
-# Review
+## Review
 
 In this lab, you have performed  the following tasks:
 
