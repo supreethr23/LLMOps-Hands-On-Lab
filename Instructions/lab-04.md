@@ -25,7 +25,7 @@
 
 1. The results in the **Monitoring (preview)** tab of your deployment provide insights to help you proactively improve the performance of your prompt flow application.
 
-## Task 02: Add Content Safety to your Solution
+## Task 02: Add Content Safety to Your Solution
 
 1. In your Azure AI Studio, navigate to **Tools > Prompt flow** and click on **+ Create**.
 
@@ -43,11 +43,11 @@
 
    ![](media/standard-joke-flow-structure.png)
 
-1. In the standard joke flow, delete the **echo** node, as you will be adding two Python nodes to process the output from the Content Safety tool, determine whether to proceed with the standard flow or not and craft a default response. Click on **Delete step** once the **Confirm Deletion** pop-up appears.
+1. In the standard joke flow, delete the **echo** node, as you will be adding two Python nodes to process the output from the Content Safety tool, determine whether to proceed with the standard flow or not, and craft a default response. Click on the **Delete step** once the **Confirm Deletion** pop-up appears.
 
    ![](media/standard-flow-delete-echo.png)
 
-1. Notice that the outputs node dissappears from the graph, since the **outputs** node was configured to fetch the output value from the **echo** node.
+1. Notice that the outputs node disappears from the graph since the **outputs** node was configured to fetch the output value from the **echo** node.
 
 1. Navigate to the **Outputs** section in the standard flow and change the **outputs** value to **${joke.output}**.
 
@@ -70,11 +70,11 @@
 
    ![](media/config-content-safety-inputs.png)
 
-1. Add a Pyhton node to process the output from the Content Safety tool and determine whether to proceed with the standard flow or not. Click on **+ Python**, name the node as **content_safety_check** and click on **Add**.
+1. Add a Python node to process the output from the Content Safety tool and determine whether to proceed with the standard flow or not. Click on **+ Python**, name the node as **content_safety_check** and click on **Add**.
 
    ![](media/content_safety-check-name-add.png)
 
-1. Navigate to the **C:\LabFiles** folder to locate the **content_safety_check.py** file. Copy the content of this file into the **content_safety_check** node, click on **Validate and parse input** and configure the **input1** value as **${content_safety.output}**.
+1. Navigate to the **C:\LabFiles** folder to locate the **content_safety_check.py** file. Copy the content of this file into the **content_safety_check** node, click on **Validate and parse input**, and configure the **input1** value as **${content_safety.output}**.
 
    ![](media/config-content-safety-check.png)
 
@@ -115,7 +115,7 @@
 
    ![](media/content-safety-reject.png)
 
-1. Also notice in the outputs in the **generate_result** node, where it doesn't generate the joke on the offensive/hateful topic and provides an alternate light-hearted and non-offensice joke.
+1. Also notice in the outputs in the **generate_result** node, where it doesn't generate the joke on the offensive/hateful topic and provides an alternate light-hearted and non-offensive joke.
 
    ![](media/generate-result-joke-output.png)
 
