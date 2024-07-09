@@ -156,7 +156,7 @@
 
    ![](media/multi-rag-flow-chat-box.png)
 
-
+### You have successfully completed the lab.
 
 
 

@@ -377,7 +377,7 @@
 
    ![](media/prompt-flow-chat-response.png)
 
-
+### You have successfully completed the lab.
 
 
 

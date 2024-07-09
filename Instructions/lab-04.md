@@ -119,7 +119,7 @@
 
    ![](media/generate-result-joke-output.png)
 
-
+### You have successfully completed the lab.
 
 
 
