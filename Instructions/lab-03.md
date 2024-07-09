@@ -5,7 +5,7 @@
 
 1. Navigate to your **Multi-Round Q&A on Your Data** prompt flow from the **Tools > Prompt flow** section in your Azure AI Studio.
 
-1. Create a new output named **documents** in the Outputs node. This output will represent the documents that were retrieved in the **lookup** node and subsequently formatted in the **generate_prompt_context** node. Assign the output of the generate_prompt_context node to the documents output
+1. Create a new output named **documents** in the Outputs node. This output will represent the documents that were retrieved in the **lookup** node and subsequently formatted in the **generate_prompt_context** node. Assign the output of the generate_prompt_context node to the output of the document.
 
    ![](media/new-output-documents.png)
 
@@ -27,7 +27,7 @@
 
    ![](media/groundedness-evaluation-clone.png)
 
-1. An Evaludation flow will be created with the following structure.
+1. An Evaluation flow will be created with the following structure.
 
    ![](media/groundedness-flow.png)
 
@@ -67,7 +67,7 @@
 
    ![](media/custom-evaluation-add-new-data.png)
 
-1. On the **Add new data** pane, enter a name for your data, click on **Browse** to choose a file and upload the **data.csv** file from the **C:\LabFiles** folder and click on **Add**.
+1. On the **Add new data** pane, enter a name for your data, click on **Browse** to choose a file, and upload the **data.csv** file from the **C:\LabFiles** folder and click on **Add**.
 
    ![](media/custom-evaluation-add-new-data-01.png)
 
@@ -75,7 +75,7 @@
 
    ![](media/custom-evaluation-basic-settings-next.png)
 
-1. On the **Evaluation settings > Select evaluation**, select the three evaluation flows you created earlier amd click on **Next**.
+1. On the **Evaluation settings > Select evaluation**, select the three evaluation flows you created earlier and click on **Next**.
 
    ![](media/custom-evaluation-select-three.png)
 
@@ -95,7 +95,7 @@
   
    ![](media/custom-evaluation-relevance-conifg.png)
 
-1. Once you have configured all the three evalution settings, click on **Review + submit** and then **Submit**.
+1. Once you have configured all three evaluation settings, click on **Review + submit** and then **Submit**.
 
 1. The evaluation process has started. To view all evaluations (one per variant), navigate to the **Tools > Evaluation**.
 
@@ -109,7 +109,7 @@
 
    ![](media/evaluation-switch-dashboard.png)
 
-   - Table comparison
+   - Table Comparison
 
    ![](media/table-comparison.png)
    
