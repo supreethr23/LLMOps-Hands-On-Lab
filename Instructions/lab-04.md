@@ -1,5 +1,13 @@
 ## Lab 04: Monitoring and Responsible AI 
+
 ### Estimated Time: 60 mins
+
+## Lab Objectives
+
+After completing this lab, you will be able to complete the following tasks:
+
+- Task 01: Monitoring your LLMs flow
+- Task 02: Add Content Safety to Your Solution
 
 ## Task 01: Monitoring your LLMs flow
 
@@ -118,6 +126,13 @@
 1. Also notice in the outputs in the **generate_result** node, where it doesn't generate the joke on the offensive/hateful topic and provides an alternate light-hearted and non-offensive joke.
 
    ![](media/generate-result-joke-output.png)
+
+# Review
+
+In this lab, you have performed  the following tasks:
+
+- Monitored your LLMs flow
+- Added Content Safety to Your Solution
 
 ### You have successfully completed the lab.
 

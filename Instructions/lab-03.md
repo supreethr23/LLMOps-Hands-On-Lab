@@ -1,5 +1,13 @@
 # Lab 03: Evaluating and Deploying LLMs
+
 ### Estimated Time: 60 mins
+
+## Lab Objectives
+
+After completing this lab, you will be able to complete the following tasks:
+
+- Task 01: Evaluate Chat Flow Performance and Robustness
+- Task 02: Deploy and Manage RAG Flow to an Online Endpoint
 
 ## Task 01: Evaluate Chat Flow Performance and Robustness
 
@@ -127,7 +135,7 @@
 
 1. On the **Basic settings** tab, configure the basic settings to deploy the endpoint in the deployment wizard and click on **Review + create**.
 
-   - Virtual Machine: **Standard_E2s_v3**
+   - Virtual Machine: **Standard_E2s_v3** or any select the size.
    - Instance count: **1**
 
    ![](media/multi-flow-deploy-basic-settings.png)
@@ -156,6 +164,13 @@
 > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
 > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+
+# Review
+
+In this lab, you have performed  the following tasks:
+
+- Evaluated Chat Flow Performance and Robustness
+- Deployed and Managed RAG Flow to an Online Endpoint
 
 ### You have successfully completed the lab.
 

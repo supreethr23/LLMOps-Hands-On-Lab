@@ -1,5 +1,13 @@
 # Lab 02: Building LLMs Orchestration Flows
+
 ### Estimated Time: 60 mins
+
+## Lab Objectives
+
+After completing this lab, you will be able to complete the following tasks:
+
+- Task 01: Create a standard classification flow
+- Task 02: Create a conversational RAG flow
 
 ## Task 01: Create a standard classification flow
 
@@ -155,6 +163,14 @@
 1. Ask questions in regards to the PDF in the Chat box to get the relevant answers.
 
    ![](media/multi-rag-flow-chat-box.png)
+
+
+# Review
+
+In this lab, you have performed  the following tasks:
+
+- Created a standard classification flow
+- Created a conversational RAG flow
 
 ### You have successfully completed the lab.
 

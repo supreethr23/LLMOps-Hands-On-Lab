@@ -1,5 +1,19 @@
 # Lab 01: Introduction to LLMs and Azure AI Services
+
 ### Estimated Time: 60 mins
+
+## Lab Objectives
+
+After completing this lab, you will be able to complete the following tasks:
+
+- Task 01: Create an AI Project and AI Hub Resources
+- Task 02: Deploy Azure OpenAI Models
+- Task 03: Create a Content Safety Service
+- Task 04: Add an Azure Content Safety connection
+- Task 05: Use Azure AI Studio Playground
+- Task 06: Work with an Open Source LLM Model
+- Task 07: Test the prompt in Content Safety
+- Task 08: Create a Prompt Flow
 
 ## Task 01: Create an AI Project and AI Hub Resources
 
@@ -376,6 +390,19 @@
    ```
 
    ![](media/prompt-flow-chat-response.png)
+
+# Review
+
+In this lab, you have performed  the following tasks:
+
+- Created an AI Project and AI Hub Resources
+- Deployed Azure OpenAI Models
+- Created a Content Safety Service
+- Added an Azure Content Safety connection
+- Used Azure AI Studio Playground
+- Worked with an Open Source LLM Model
+- Tested the prompt in Content Safety
+- Created a Prompt Flow
 
 ### You have successfully completed the lab.
 
