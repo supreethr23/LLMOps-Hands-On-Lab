@@ -90,7 +90,7 @@
 
    ![](media/deploy-gpt-4-model01.png)
 
-1. Verify that the **GPT-4** model is present in the Deployments section.
+1. Verify that the **gpt-4** model is present in the Deployments section.
 
    ![](media/gpt-4-model-deployments.png)
 
