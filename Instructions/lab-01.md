@@ -41,6 +41,32 @@
 
    ![](media/azure-portal-resources.png)
 
+1. Within the selected Resource Group, in the left-hand menu, click on **Access control (IAM)**.
+
+1. In the Access control (IAM) pane, click on the **+ Add** button at the top.
+
+1. Select **Add role assignment** from the dropdown.
+
+1. In the Add role assignment pane, you'll see a dropdown labeled **Role**.
+
+1. Click on the dropdown and select **Reader**. This role allows the user or entity to view all resources in the Resource Group but not make any changes.
+
+1. Under the **Assign access to** section, select **Managed identity (2)** .
+
+1. Click on **Select members (3)**.
+
+1. Select your **Subscription (4)** under Subscription and select **Azure AI project(1) (5)** Under Managed Identity.
+
+1. In the Select pane, search for and select the specific project ID or managed identity associated with the AI project you are working on **(6)**.
+
+1. Once selected, click **Select (7)** to confirm your choice.
+
+1. Click **Review + assign (8)** on the Members tab, and then click **Review + assign** again to complete the process.
+
+   ![](media/IAM.png)
+
+1. A notification will appear confirming that the role assignment has been successfully added.
+
 #### Validation
  
 <validation step="ee969cae-cf3c-46aa-b0fe-5bb362b64bef" />

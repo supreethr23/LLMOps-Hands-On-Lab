@@ -109,6 +109,8 @@
 
 1. To run the flow, enter an offensive topic as the input for the joke to be generated and click on **Run**.
 
+   ![](media/ca.png)
+
 1. Notice how the **content_safety** node rejects the offensive or hateful input topics.
 
    ![](media/content-safety-reject.png)
