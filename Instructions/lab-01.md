@@ -37,13 +37,13 @@
 
    ![](media/review-create-project.png)
 
-1. You can also navigate to your resource group in Azure portal to verify the resources deployed.
+1. You can also navigate to your resource group in the Azure portal to verify the resources deployed.
 
    ![](media/azure-portal-resources.png)
 
 1. Within the selected Resource Group, in the left-hand menu, click on **Access control (IAM)**.
 
-1. In the Access control (IAM) pane, click on the **+ Add** button at the top.
+1. In the Access Control (IAM) pane, click on the **+ Add** button at the top.
 
 1. Select **Add role assignment** from the dropdown.
 
@@ -90,7 +90,7 @@
 
    ![](media/deploy-gpt-4-model01.png)
 
-1. Verify that the **gpt-4** model is present in the Deployments section.
+1. Verify that the **GPT-4** model is present in the Deployments section.
 
    ![](media/gpt-4-model-deployments.png)
 
@@ -110,7 +110,7 @@
 
 ## Task 03: Create a Content Safety Service
 
-1. Navigate to Azure portal, search for **Content Safety**.
+1. Navigate to the Azure portal, and search for **Content Safety**.
 
    ![](media/search-content-safety.png)
 
@@ -130,7 +130,7 @@
 
    ![](media/create-content-safety.png)
 
-1. On the **Identity** tab, verify that the System assigned managed identity Status is turned **On**. Click on **Review + create** and then **Create**.
+1. On the **Identity** tab, verify that the System-assigned managed identity Status is turned **On**. Click on **Review + create** and then **Create**.
 
    ![](media/create-content-safety-identity.png)
 
@@ -184,7 +184,7 @@
 1. Copy the following prompt into the system message field of the playground and click on **Apply changes**.
 
    ```
-   You're an AI assistant that helps telco company to extract valuable information from their conversations by creating JSON files for each conversation transcription you receive. You always try to extract and format as a JSON:
+   You're an AI assistant that helps telco company to extract valuable information from their conversations by creating JSON files for each conversation transcription you receive. You always try to extract and format it as a JSON:
    1. Customer Name [name]
    2. Customer Contact Phone [phone]
    3. Main Topic of the Conversation [topic]
