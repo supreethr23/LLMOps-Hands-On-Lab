@@ -1,6 +1,6 @@
 # Lab 01: Introduction to LLMs and Azure AI Services
 
-### Estimated Time: 60 mins
+### Estimated Time: 60 minutes
 
 ## Lab Objectives
 
@@ -27,55 +27,55 @@ After completing this lab, you will be able to complete the following tasks:
 
    ![](media/create-new-project.png)
 
-1. On the Project Details section, enter a unique name for your project and click on **Next**.
+1. On the **Project details** section, enter a unique name for your project and click on **Next**.
 
    ![](media/new-project-name.png)
 
-1. On the Create Hub section, configure the below values.
+1. On the **Create a Hub** section, configure the below values.
 
-   - Subscription: **Select your Default Subscription**
-   - Resource group: **llm-ops-<inject key="Deployment-ID" enableCopy="false"/>**
-   - Location: **<inject key="Region" enableCopy="false"/>**
+   - Subscription: **Select your default subscription (2)**
+   - Resource group: **llm-ops-<inject key="Deployment-ID" enableCopy="false"/>** **(3)**
+   - Location: **<inject key="Region" enableCopy="false"/>** **(4)**
 
    ![](media/create-new-hub.png)
 
-1. Click on **Create new AI Search** for the Connect Azure AI Search option. Enter the name for your Azure AI Search and click on **Create**.
+1. Click on **Create new AI Search (1)** for the **Connect Azure AI Search** option. Enter the **name (2)** for your **Azure AI Search** and click on **Create**.
 
    ![](media/create-new-ai-search.png)
 
-1. On the Create Hub section, click on **Next**.
+1. On the **Create a Hub** section, click on **Next**.
 
    ![](media/create-hub-next.png)
 
-1. On the Review and finish section, review your Azure AI services, click on **Create a project** and wait for the deployments to succeed.
+1. In the **Review and finish** section, review your Azure AI services, click on **Create a project,** and wait for the deployments to succeed.
 
    ![](media/review-create-project.png)
 
-1. You can also navigate to your resource group in the Azure portal to verify the resources deployed.
+1. You can also navigate to your **resource groups** section in the Azure portal to verify the resources deployed.
 
    ![](media/azure-portal-resources.png)
 
-1. Within the selected Resource Group, in the left-hand menu, click on **Access control (IAM)**.
+1. Within the selected **resource group**, in the left-hand menu, click on **Access control (IAM)**.
 
-1. In the Access Control (IAM) pane, click on the **+ Add** button at the top.
+1. In the **Access Control (IAM)** pane, click on the **+ Add** button at the top.
 
-1. Select **Add role assignment** from the dropdown.
+1. Select **Add role assignment** from the drop-down.
 
-1. In the Add role assignment pane, you'll see a dropdown labeled **Role**.
+1. In the **Add role assignment** pane, you'll see a drop-down labeled **Role**.
 
-1. Click on the dropdown and select **Reader**. This role allows the user or entity to view all resources in the Resource Group but not make any changes.
+1. Click on the **drop-down** and select **Reader**. This role allows the user or entity to view all resources in the **resource group** but not make any changes.
 
-1. Under the **Assign access to** section, select **Managed identity (2)** .
+1. Under the **Assign access to** section, select **Managed identity (2)**.
 
 1. Click on **Select members (3)**.
 
-1. Select your **Subscription (4)** under Subscription and select **Azure AI project(1) (5)** Under Managed Identity.
+1. Select your **subscription (4)** under **Subscription** and select **Azure AI project(1) (5)** under **Managed Identity**.
 
-1. In the Select pane, search for and select the specific project ID or managed identity associated with the AI project you are working on **(6)**.
+1. In the **Select** pane, search for and select the **specific project ID** or managed identity associated with the AI project you are working on **(6)**.
 
-1. Once selected, click **Select (7)** to confirm your choice.
+1. Once selected, click on **Select (7)** to confirm your choice.
 
-1. Click **Review + assign (8)** on the Members tab, and then click **Review + assign** again to complete the process.
+1. Click on **Review + assign (8)** within the **Members** tab, and then click **Review + assign** again to complete the process.
 
    ![](media/IAM.png)
 
