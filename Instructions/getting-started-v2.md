@@ -6,7 +6,7 @@ Welcome to your Customer Support Conversation Summarization with Azure OpenAI Wo
  
 Once you're ready to dive in, your virtual machine and lab guide will be right at your fingertips within your web browser.
 
-  ![](media/lab-guide-01.png)
+  ![](media/labguide01.png)
 
 ### Virtual Machine & Lab Guide
  
