@@ -54,7 +54,7 @@ Feel free to **start, stop, or restart (2)** your virtual machine as needed from
    
       ![](media/user-email.png "Enter Email")
      
-1. Next, enter the password and click on **Sign in**.
+1. Next, enter the **password** and click on **Sign in**.
    
    * **Password**: <inject key="AzureAdUserPassword"></inject>
    
