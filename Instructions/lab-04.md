@@ -47,7 +47,7 @@ After completing this lab, you will be able to complete the following tasks:
 
    ![](media/standard-joke-flow-create.png)
 
-1. A **standard-joke-flow** will be created in the following structure.
+1. A **standard-joke-flow** will be created in the following structure:
 
    ![](media/standard-joke-flow-structure.png)
 
