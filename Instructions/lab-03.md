@@ -1,49 +1,49 @@
 # Lab 03: Evaluating and Deploying LLMs
 
-### Estimated Time: 60 mins
+### Estimated Time: 60 minutess
 
 ## Lab Objectives
 
 After completing this lab, you will be able to complete the following tasks:
 
-- Task 01: Evaluate Chat Flow Performance and Robustness
-- Task 02: Deploy and Manage RAG Flow to an Online Endpoint
+- **Task 01:** Evaluate Chat Flow Performance and Robustness
+- **Task 02:** Deploy and Manage RAG Flow to an Online Endpoint
 
 ## Task 01: Evaluate Chat Flow Performance and Robustness
 
 1. Navigate to your **Multi-Round Q&A on Your Data** prompt flow from the **Tools > Prompt flow** section in your Azure AI Studio.
 
-1. Create a new output named **documents** in the Outputs node. This output will represent the documents that were retrieved in the **lookup** node and subsequently formatted in the **generate_prompt_context** node. Assign the output of the generate_prompt_context node to the output of the document.
+1. Create a new output named **documents (1)** in the **Outputs** node. This output will represent the documents that were retrieved in the **lookup** node and subsequently formatted in the **generate_prompt_context.output** node. Assign the output of the **generate_prompt_context.output (2)** node to the output of the document.
 
    ![](media/new-output-documents.png)
 
-1. Click **Save** before moving to the next steps.
+1. Click **Save** before moving on to the next steps.
 
    ![](media/multi-round-save.png)
 
-1. In the Azure AI Studio, navigate to **Tools > Prompt flow** and click on **+ Create**.
+1. In Azure AI Studio, navigate to **Tools > Prompt flow** and click on **+ Create**.
 
    ![](media/+create-prompt-flow.png)
 
-1. Select the Evaluation Flow filter and click on **Clone** on the **QnA Groundedness Evaluation** card.
+1. Select the **Evaluation Flow** filter and click on the **Clone** option on the **QnA Groundedness Evaluation** card.
 
    >**Note:** Click on **View more samples** on the top right of the **Create a new flow** window to get more sample evaluation flows.
 
    ![](media/groundedness-evaluation.png)
 
-1. In the Clone flow window, accept the default folder name value and click on **Clone**.
+1. In the **Clone flow** window, accept the default folder name value and click on **Clone**.
 
    ![](media/groundedness-evaluation-clone.png)
 
-1. An Evaluation flow will be created with the following structure.
+1. An **Evaluation flow** will be created with the following structure:
 
    ![](media/groundedness-flow.png)
 
-1. Update the Connection field to point to a **gpt-4** deployment in **groundedness_score** node. After updating the connection information, click on **Save** in the evaluation flow.
+1. Update the **Connection** field to point to a **gpt-4** deployment in **groundedness_score** node. After updating the connection information, click on **Save** in the **evaluation flow**.
 
    ![](media/groundedness-score-save.png)
 
-1. Now, repeat the same steps to create two additional evaluation flows, one **QnA Relevance Evaluation** and another **QnA GPT Similarity Evaluation**.
+1. Now, repeat the same steps to create two additional evaluation flows: one **QnA Relevance Evaluation** and another **QnA GPT Similarity Evaluation**.
 
    >**Note:** Note that the LLM nodes, where you will set the Azure OpenAI connection for each flow, have slightly different names: **relevance_score** and **similarity_score**, respectively.
 
@@ -59,11 +59,11 @@ After completing this lab, you will be able to complete the following tasks:
 
    ![](media/similarity-score.png)
 
-1. In the Flows section of **Prompt Flow**, open the **Multi-Round Q&A on Your Data** flow that you created. This will be the flow we use for evaluation.
+1. In the **Flows** section of **Prompt Flow**, open the **Multi-Round Q&A on Your Data** flow that you created. This will be the flow we use for evaluation.
 
-1. Start the compute session if not started already.
+1. Start the compute session if it has not started already.
 
-1. On your **Multi-Round Q&A on Your Data** flow, select **Custom Evaluation** from the **Evaluation** dropdown.
+1. On your **Multi-Round Q&A on Your Data** flow, select **Custom Evaluation** from the **Evaluate** dropdown.
 
    ![](media/custom-evaluation-dropdown.png)
 
@@ -103,11 +103,11 @@ After completing this lab, you will be able to complete the following tasks:
   
    ![](media/custom-evaluation-relevance-conifg.png)
 
-1. Once you have configured all three evaluation settings, click on **Review + submit** and then **Submit**.
+1. Once you have configured all three evaluation settings, click on **Review + submit** and then on the **Submit** option.
 
-1. The evaluation process has started. To view all evaluations (one per variant), navigate to the **Tools > Evaluation**.
+1. The evaluation process has started. To view all evaluations (one per variant), navigate to **Tools > Evaluation**.
 
-   >**Note:** Wait for the evaluation status to get **Completed**.
+   >**Note:** Wait for the evaluation status to be shown as **Completed**.
 
    ![](media/evaluation-status-complete.png)
 
@@ -127,7 +127,7 @@ After completing this lab, you will be able to complete the following tasks:
 
 ## Task 02: Deploy and Manage RAG Flow to an Online Endpoint
 
-1. In the Azure AI Studio, navigate to **Tools > Prompt flow** and select the **Multi-Round Q&A on Your Data** chat flow.
+1. In Azure AI Studio, navigate to **Tools > Prompt flow** and select the **Multi-Round Q&A on Your Data** chat flow.
 
 1. Select **Deploy** on the flow editor.
 
