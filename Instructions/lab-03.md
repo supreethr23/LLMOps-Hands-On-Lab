@@ -39,7 +39,7 @@ After completing this lab, you will be able to complete the following tasks:
 
    ![](media/groundedness-flow.png)
 
-1. Update the **Connection** field to point to a **gpt-4** deployment in **groundedness_score** node. After updating the connection information, click on **Save** in the **evaluation flow**.
+1. Update the **Connection** field to point to a **gpt-4** deployment in the **groundedness_score** node. After updating the connection information, click on **Save** in the **evaluation flow**.
 
    ![](media/groundedness-score-save.png)
 
@@ -59,7 +59,7 @@ After completing this lab, you will be able to complete the following tasks:
 
    ![](media/similarity-score.png)
 
-1. In the **Flows** section of **Prompt Flow**, open the **Multi-Round Q&A on Your Data** flow that you created. This will be the flow we use for evaluation.
+1. In the **Flow** section of **Prompt Flow**, open the **Multi-Round Q&A on Your Data** flow that you created. This will be the flow we use for evaluation.
 
 1. Start the compute session if it has not started already.
 
@@ -87,7 +87,7 @@ After completing this lab, you will be able to complete the following tasks:
 
    ![](media/custom-evaluation-select-three.png)
 
-1. On the **Evaluation settings > Configure evaluation**, to set up the **question**, **context**, **ground_truth** and **answer** fields for each evaluation flow.
+1. On the **Evaluation settings > Configure evaluation** to set up the **question**, **context**, **ground_truth** and **answer** fields for each evaluation flow.
 
    >**Note:** Please take a moment to ensure you've selected the correct value. It's crucial for accurate metric calculation. Notice that the default values initially presented in the wizard are not the same as those indicated in the following images. 
 
