@@ -144,7 +144,7 @@ After completing this lab, you will be able to complete the following tasks:
 
    ![](media/create-content-safety.png)
 
-1. On the **Identity** tab, verify that the System-assigned managed identity Status is turned **On**. Click on **Review + create** and then **Create**.
+1. On the **Identity** tab, verify that the **System-assigned managed identity Status** is turned **On**. Click on **Review + create** and then on the **Create** option.
 
    ![](media/create-content-safety-identity.png)
 
@@ -153,25 +153,25 @@ After completing this lab, you will be able to complete the following tasks:
 <validation step="071312be-06ef-4970-a4c0-5ff6deb9cc40" />
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-> - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+> - Click on the **Validate** button for the corresponding task. If you receive a success message, you can proceed to the next task. 
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-> - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+> - If you need any assistance, please contact us at **labs-support@spektrasystems.com**. We are available 24/7 to help you out.
 
 ## Task 04: Add an Azure Content Safety connection
 
-1. Navigate to your **odl_user_<inject key="Deployment-ID" enableCopy="false"/>-XXXX** project in Azure AI Studio.
+1. Navigate to your **odl_user_<inject key="Deployment-ID" enableCopy="false"/>-XXXX** project in **Azure AI Studio**.
 
    ![](media/project-select.png)
 
-1. On the project overview, navigate on **Settings** and click on **+ New connection** under Connected resources.
+1. On the **project overview** page, navigate to the **Settings** tab and click on **+ New connection** under **Connected resources**.
 
    ![](media/project-new-connection.png)
 
-1. On the *Add a connection to external assests* pane, click on **Azure AI Content Safety**.
+1. On the **Add a connection to external assets** pane, click on **Azure AI Content Safety**.
 
    ![](media/select-content-safety-connection.png)
 
-1. On the *Connect an Azure AI Content Safety resource* pane, click on **Add connection** for the existing Content Safety resource that you created in the previous task.
+1. On the **Connect an Azure AI Content Safety resource** pane, click on **Add connection** for the existing Content Safety resource that you had created in the previous task.
 
    ![](media/add-content-safety-connection.png)
 
@@ -179,13 +179,13 @@ After completing this lab, you will be able to complete the following tasks:
 
    ![](media/review-content-safety-connection.png)
 
-1. Navigate back to the **Settings > Connected resources** to verify the Azure Content Safety connection.
+1. Navigate back to **Settings > Connected resources** to verify the **Azure Content Safety connection**.
 
    ![](media/confirm-content-safety-connection.png)
 
 ## Task 05: Use Azure AI Studio Playground
 
-1. In your Azure AI Studio, navigate to the **gpt-4** deployment under the Deployments settings.
+1. In your **Azure AI Studio**, navigate to the **gpt-4** deployment under the **Deployments** option.
 
    ![](media/gpt-4-model-deployments.png)
 
@@ -195,7 +195,7 @@ After completing this lab, you will be able to complete the following tasks:
 
 1. Let us run an example where the model will help us summarize and extract information from a conversation between a customer and a representative of a telco company.
 
-1. Copy the following prompt into the system message field of the playground and click on **Apply changes**.
+1. Copy the following prompt into the **System message** field of the **Chat playground** and click on **Apply changes**.
 
    ```
    You're an AI assistant that helps telco company to extract valuable information from their conversations by creating JSON files for each conversation transcription you receive. You always try to extract and format it as a JSON:
@@ -212,11 +212,11 @@ After completing this lab, you will be able to complete the following tasks:
 
    ![](media/gpt-4-apply-changes.png)
 
-   >**Note:** If you receive a *Update systems message?* pop-up, enable the **Do not show this again** and click on **Continue**.
+   >**Note:** If you receive an **"Update systems message?"** pop-up, enable **Do not show this again,** and click on **Continue**.
 
    ![](media/update-sys-msg.png)
    
-1. Copy the following text in the chat session and click the send button.
+1. Copy the following text in the **chat session** and click on the **send** button.
 
    ```
    Agent: Hello, welcome to Telco's customer service. My name is Juan, how can I assist you?
@@ -244,7 +244,7 @@ After completing this lab, you will be able to complete the following tasks:
 
    ![](media/chat-msg-send.png)
 
-1. You will see a result generated by the model similar to the one shown in the image below. Notice that the model correctly followed the instructions indicated in the System message field.
+1. You will see a result generated by the model similar to the one shown in the image below. Notice that the model has correctly followed the instructions indicated in the **System message** field.
 
    ```
    {
@@ -262,15 +262,15 @@ After completing this lab, you will be able to complete the following tasks:
    
 ## Task 06: Work with an Open Source LLM Model
 
-1. Now let's test an open source Llama2 model from Meta. Navigate to **Components > Deployments** settings and click on **Create Deployment** to create an OpenAI model.
+1. Now let's test an **open-source Llama2 model** from Meta. Navigate to **Components > Deployments (1)** settings and click on **+ Create deployment (2)** to create an **OpenAI model**.
 
    ![](media/deployments-create.png)
 
-1. Search for and select **Llama-2-13b-chat** from the list of models and click on **Confirm**.
+1. Search for and select **Llama-2-13b-chat** from the list of models, and click on **Confirm**.
 
    ![](media/llama-chat-model-confirm.png)
 
-1. On the Deployments options tab, click on **Serverless API with Azure AI Content Safety**.
+1. On the **Deployment options** tab, click on **Serverless API with Azure AI Content Safety**.
 
    ![](media/llama-serverless-api.png)
 
@@ -278,29 +278,29 @@ After completing this lab, you will be able to complete the following tasks:
 
    ![](media/llama-subs-and-deploy.png)
 
-1. Once the **Serverless API deployment for Llama-2-13b-chat** deployment succeeds, click on **Deploy** on the **Deploy Llama-2-13b-chat**.
+1. Once the **Serverless API deployment for Llama-2-13b-chat** deployment succeeds, click on the **Deploy** option on the **Deploy Llama-2-13b-chat**.
 
    ![](media/llama-chat-model-deploy.png)
 
-1. Wait for the chat model provisioning state to get **Succeeded** before using the deployment.
+1. Wait for the chat model provisioning state to appear as **Succeeded** before using the deployment.
 
    ![](media/llama-provisioning-state.png)
 
-1. On the **Llama-2-13b-chat** deployment details, click on **Open in playground** to start using the Open Source LLM Model.
+1. On the **Llama-2-13b-chat** deployment details, click on **Open in playground** to start using the **Open Source LLM Model**.
 
    ![](media/llama-open-in-playground.png)
 
 ## Task 07: Test the prompt in Content Safety
 
-1. On your Azure AI Studio, navigate to **AI Services** and click on the **Content Safety** box to get started with Content Safety Studio.
+1. On your **Azure AI Studio,** navigate to **AI Services** and click on the **Content Safety** box to get started with **Content Safety Studio**.
 
    ![](media/ai-services-content-safety.png)
 
-1. On the **Content Safety** studio, click on the **Moderate Text Content** to try out the prompt.
+1. On the **Content Safety** studio, click on the **Moderate text content** option to try out the prompt.
 
    ![](media/content-safety-studio.png)
 
-1. On the **Moderate Text Content** window, select the content safety resource from the **Azure AI Services** dropdown.
+1. On the **Moderate text content** window, select the **content safety resource** from the **Azure AI services resources** dropdown.
 
    ![](media/content-safety-resource-select.png)
 
@@ -339,15 +339,15 @@ After completing this lab, you will be able to complete the following tasks:
 
 ## Task 08: Create a Prompt Flow
 
-1. Navigate to the **gpt-4** deployment under the Deployments settings in your Azure AI Studio.
+1. Navigate to the **gpt-4** deployment under the **Deployments** settings in your **Azure AI Studio**.
 
    ![](media/gpt-4-model-deployments.png)
 
-1. Perform the same steps that you performed in **Task 04** by adding the same system message, applying the changes and fetching the response. Once the response is generated, click on **Prompt flow**.
+1. Perform the same steps that you performed in **Task 04** by adding the same system message, applying the changes, and fetching the response. Once the response is generated, click on **Prompt flow**.
 
    ![](media/chat-playground-prompt-flow.png)
 
-1. On the **Orchestrate and customize this setup with promt flow**, click on **Open**. This will create a new prompt flow.
+1. On **"Orchestrate and customize this setup with promt flow,"** click on **Open**. This will create a new prompt flow.
 
    ![](media/prompt-flow-open.png)
 
@@ -359,11 +359,11 @@ After completing this lab, you will be able to complete the following tasks:
 
    ![](media/prompt-flow-start-compute.png)
 
-1. Configure the connection settings with the AI service and the gpt-4 deployment for the **chat** node and then click on **Chat** button to test your flow in the chat window.
+1. Configure the connection settings with the AI service and the gpt-4 deployment for the **chat** node, and then click on the **Chat** button to test your flow in the **chat window**.
 
    ![](media/prompt-flow-connection-chat.png)
 
-1. In the chat window, copy and paste the below conversation and click on send to view the expected response.
+1. In the **chat window**, copy and paste the below conversation and click on **send** to view the expected response.
 
    ```
    Agent: Hello, welcome to Telco's customer service. My name is Juan, how can I assist you?
