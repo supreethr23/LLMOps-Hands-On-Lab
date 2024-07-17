@@ -1,4 +1,4 @@
-# Lab 02: Building LLMs Orchestration Flows
+# Lab 02: Building LLM Orchestration Flows
 
 ### Estimated Time: 60 minutes
 
@@ -64,7 +64,7 @@ After completing this lab, you will be able to complete the following tasks:
 
 ## Task 02: Create a Conversational RAG flow
 
-1. In the **Azure AI Studio**, navigate to **Tools > Prompt flow** and click on **+ Create**.
+1. In **Azure AI Studio**, navigate to **Tools > Prompt flow** and click on **+ Create**.
 
    ![](media/multi-rag-flow.png)
 
@@ -130,7 +130,7 @@ After completing this lab, you will be able to complete the following tasks:
 
    ![](media/review-create-index.png)
 
-1. Wait until the index status is **Completed** before proceeding with the next steps.
+1. Wait until the index status is shown as **Completed** before proceeding with the next steps.
 
    ![](media/index-complete-status.png)
 
