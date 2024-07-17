@@ -6,14 +6,14 @@
 
 After completing this lab, you will be able to complete the following tasks:
 
-- Task 01: Create an AI Project and AI Hub Resources
-- Task 02: Deploy Azure OpenAI Models
-- Task 03: Create a Content Safety Service
-- Task 04: Add an Azure Content Safety connection
-- Task 05: Use Azure AI Studio Playground
-- Task 06: Work with an Open Source LLM Model
-- Task 07: Test the prompt in Content Safety
-- Task 08: Create a Prompt Flow
+- **Task 01:** Create an AI Project and AI Hub Resources
+- **Task 02:** Deploy Azure OpenAI Models
+- **Task 03:** Create a Content Safety Service
+- **Task 04:** Add an Azure Content Safety connection
+- **Task 05:** Use Azure AI Studio Playground
+- **Task 06:** Work with an Open Source LLM Model
+- **Task 07:** Test the prompt in Content Safety
+- **Task 08:** Create a Prompt Flow
 
 ## Task 01: Create an AI Project and AI Hub Resources
 
@@ -27,7 +27,7 @@ After completing this lab, you will be able to complete the following tasks:
 
    ![](media/create-new-project.png)
 
-1. On the **Project details** section, enter a unique name for your project and click on **Next**.
+1. In the **Project details** section, enter a unique name for your project and click on **Next**.
 
    ![](media/new-project-name.png)
 
@@ -51,7 +51,7 @@ After completing this lab, you will be able to complete the following tasks:
 
    ![](media/review-create-project.png)
 
-1. You can also navigate to your **resource groups** section in the Azure portal to verify the resources deployed.
+1. You can also navigate to your **Resource groups** section in the Azure portal to verify the resources deployed.
 
    ![](media/azure-portal-resources.png)
 
@@ -67,11 +67,11 @@ After completing this lab, you will be able to complete the following tasks:
 
 1. Under the **Assign access to** section, select **Managed identity (2)**.
 
-1. Click on **Select members (3)**.
+1. Click on **+ Select members (3)**.
 
-1. Select your **subscription (4)** under **Subscription** and select **Azure AI project(1) (5)** under **Managed Identity**.
+1. Select your **subscription (4)** under **Subscription** and select **Azure AI project (1) (5)** under **Managed identity**.
 
-1. In the **Select** pane, search for and select the **specific project ID** or managed identity associated with the AI project you are working on **(6)**.
+1. In the **Select** pane, search for and select the **specific project ID** or **managed identity associated with the AI project** you are working on **(6)**.
 
 1. Once selected, click on **Select (7)** to confirm your choice.
 
@@ -86,25 +86,25 @@ After completing this lab, you will be able to complete the following tasks:
 <validation step="ee969cae-cf3c-46aa-b0fe-5bb362b64bef" />
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-> - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+> - Click on the **Validate** button for the corresponding task. If you receive a success message, you can proceed to the next task. 
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-> - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+> - If you need any assistance, please contact us at **labs-support@spektrasystems.com**. We are available 24/7 to help you out.
 
 ## Task 02: Deploy Azure OpenAI Models
 
-1. Navigate to **Components > Deployments** settings and click on **Create Deployment** to create an OpenAI model.
+1. Navigate to **Components > Deployments (1)** settings and click on **Create Deployment (2)** to create an OpenAI model.
    
    ![](media/deployments-create.png)
 
-1. Select **gpt-4** from the list of models and click on **Confirm**.
+1. Select **gpt-4 (1)** from the list of models and click on **Confirm (2)**.
 
    ![](media/gpt-4-deployment.png)
 
-1. On the *Deploy model gpt-4* pane, accept the default settings and click on **Deploy**.
+1. On the **Deploy model gpt-4** pane, accept the default settings and click on **Deploy**.
 
    ![](media/deploy-gpt-4-model01.png)
 
-1. Verify that the **gpt-4** model is present in the Deployments section.
+1. Verify that the **gpt-4** model is present in the **Deployments** section.
 
    ![](media/gpt-4-model-deployments.png)
 
@@ -114,33 +114,33 @@ After completing this lab, you will be able to complete the following tasks:
 
    ![](media/text-embedding-model.png)
 
-1. On the *Deploy model text-embedding-ada-002* pane, accept the default settings and click on **Deploy**.
+1. On the **Deploy model text-embedding-ada-002** pane, accept the default settings and click on **Deploy**.
 
    ![](media/deploy-text-embedding-model.png)
 
-1. Verify that the **text-embedding-ada-002** model is present in the Deployments section.
+1. Verify that the **text-embedding-ada-002** model is present in the **Deployments** section.
 
    ![](media/text-embedding-model-deployments.png)
 
 ## Task 03: Create a Content Safety Service
 
-1. Navigate to the Azure portal, and search for **Content Safety**.
+1. Navigate to the **Azure portal** and search for **content safety**.
 
    ![](media/search-content-safety.png)
 
-1. On the **Azure AI Serices | Content Safety** tab, click on **+ Create**.
+1. On the **Azure AI Serices | Content safety** tab, click on **+ Create**.
 
    ![](media/+create-content-safety.png)
 
-1. On the Create Content Safety **Basics** tab, configure the following resources and click on **Next**.
+1. On the **Create Content Safety** **Basics** tab, configure the following resources and click on **Next**.
 
    >**Note:** Create the Content Safety resource in the same region where you have deployed the Azure AI services.
 
-   - Subscription: **Select your Default Subscription**
-   - Resource group: **llm-ops-<inject key="Deployment-ID" enableCopy="false"/>**
-   - Region: **<inject key="Region" enableCopy="false"/>**
-   - Name: **content-safety-<inject key="Deployment-ID" enableCopy="false"/>**
-   - Pricing tier: **Standard S0**
+   - Subscription: **Select your Default Subscription (1)**
+   - Resource group: **llm-ops-1377499<inject key="Deployment-ID" enableCopy="false"/> (2)**
+   - Region: **East US<inject key="Region" enableCopy="false"/> (3)**
+   - Name: **content-safety-1377499<inject key="Deployment-ID" enableCopy="false"/>(4)**
+   - Pricing tier: **Standard S0 (5)**
 
    ![](media/create-content-safety.png)
 
