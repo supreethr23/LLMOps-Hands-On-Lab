@@ -1,6 +1,6 @@
 # Lab 03: Evaluating and Deploying LLMs
 
-### Estimated Time: 60 minutess
+### Estimated Time: 60 minutes
 
 ## Lab Objectives
 
