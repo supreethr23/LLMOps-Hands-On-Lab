@@ -17,7 +17,7 @@ After completing this lab, you will be able to complete the following tasks:
 
    ![](media/enable-monitoring.png)
 
-1. On the **Enable monitoring** window, select all the metrics to monitor, configure column mapping, select your Azure OpenAI Connection and Deployment, and click on **Create**.
+1. On the **Enable monitoring** window, select all the metrics to monitor, **configure column mapping**, select your **Azure OpenAI Connection** and **Deployment**, and click on **Create**.
 
    >**Note:** Monitoring sets the default sampling rate at 10%. This means that if 100 requests are sent to your deployment, 10 get sampled and used to compute the generation quality metrics. You can adjust the sampling rate in the settings.
 
@@ -25,8 +25,8 @@ After completing this lab, you will be able to complete the following tasks:
 
 1. On the **Operational** tab, view the operational metrics for the deployment in near real-time. The supported metrics are:
 
-   - Request count
-   - Latency
+   - Requests per minute
+   - Requests latency
    - Error rate
   
    ![](media/monitoring-operational-tab.png)
@@ -43,27 +43,27 @@ After completing this lab, you will be able to complete the following tasks:
 
    ![](media/standard-flow-create.png)
 
-1. In the **Clone flow** window, name the folder **standard-joke-flow** and click on **Create**.
+1. In the **Create a new flow** window, name the folder **standard-joke-flow** and click on **Create**.
 
    ![](media/standard-joke-flow-create.png)
 
-1. A **standard joke flow** will be created in the following structure.
+1. A **standard-joke-flow** will be created in the following structure.
 
    ![](media/standard-joke-flow-structure.png)
 
-1. In the **standard joke flow**, delete the **echo** node, as you will be adding two Python nodes to process the output from the **Content Safety** tool, determine whether to proceed with the standard flow or not, and craft a default response. Click on the **Delete step** once the **Confirm Deletion** pop-up appears.
+1. In the **standard-joke-flow**, delete the **echo** node, as you will be adding two Python nodes to process the output from the **Content Safety** tool. Determine whether to proceed with the standard flow or not, and craft a default response. Click on the **Delete step** once the **Confirm Deletion** pop-up appears.
 
    ![](media/standard-flow-delete-echo.png)
 
 1. Notice that the outputs node disappears from the graph since the **outputs** node was configured to fetch the output value from the **echo** node.
 
-1. Navigate to the **Outputs** section in the standard flow and change the **output** value to **${joke.output}**.
+1. Navigate to the **Outputs** section in the **standard-joke-flow** and change the **output** value to **${joke.output}**.
 
    ![](media/standard-flow-joke-ouput.png)
 
-1. Now let's add a **Content Safety text** tool to the flow. Click on **+ More tools** and select **Content Safety (Text Analyze)**.
+1. Now let's add a **Content Safety text** tool to the flow. Click on **+ More tools (1)** and select **Content Safety (Text Analyze) (2)**.
 
-   >**Note:** Start the compute session for your standard joke flow to add more tools.
+   >**Note:** Start the compute session for your standard-joke-flow to add more tools.
 
    ![](media/more-tools-content-safety.png)
 
@@ -78,7 +78,7 @@ After completing this lab, you will be able to complete the following tasks:
 
    ![](media/config-content-safety-inputs.png)
 
-1. Add a Python node to process the output from the Content Safety tool and determine whether to proceed with the standard flow or not. Click on **+ Python**, name the node **content_safety_check,** and click on **Add**.
+1. Add a **Python** node to process the output from the **content_safety** tool and determine whether to proceed with the standard flow or not. Click on **+ Python**, name the node **content_safety_check,** and click on **Add**.
 
    ![](media/content_safety-check-name-add.png)
 
@@ -86,7 +86,7 @@ After completing this lab, you will be able to complete the following tasks:
 
    ![](media/config-content-safety-check.png)
 
-1. Add a Python node to craft a default response. Click on **+ Python**, name the node **generate_result,** and click on **Add**.
+1. Add a **Python** node to craft a default response. Click on **+ Python**, name the node **generate_result,** and click on **Add**.
 
    ![](media/generate-result-name-add.png)
 
@@ -123,7 +123,7 @@ After completing this lab, you will be able to complete the following tasks:
 
    ![](media/content-safety-reject.png)
 
-1. Also, notice in the outputs in the **generate_result** node that it doesn't generate the joke on the offensive/hateful topic and provides an alternate lighthearted and non-offensive joke.
+1. Also, notice in the **Outputs** in the **generate_result** node that it doesn't generate the joke on the offensive/hateful topic and provides an alternate lighthearted and non-offensive joke.
 
    ![](media/generate-result-joke-output.png)
 
