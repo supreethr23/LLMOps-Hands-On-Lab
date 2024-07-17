@@ -17,11 +17,11 @@ After completing this lab, you will be able to complete the following tasks:
 
 ## Task 01: Create an AI Project and AI Hub Resources
 
-1. Navigate to https://ai.azure.com to create a project in Azure AI Studio.
+1. Navigate to https://ai.azure.com to create a project in **Azure AI Studio**.
 
    ![](media/azure-ai-studio.png)
 
-1. Sign in to Azure AI Studio using the credentials from the **Environment** tab.
+1. Sign in to **Azure AI Studio** using the credentials from the **Environment** tab.
 
 1. Click on **+ New Project** to create a new project and hub.
 
@@ -132,7 +132,7 @@ After completing this lab, you will be able to complete the following tasks:
 
    ![](media/+create-content-safety.png)
 
-1. On the **Create Content Safety** **Basics** tab, configure the following resources and click on **Next**.
+1. On the **Create Content Safety** **Basics** tab, configure the following resources and click on **Next (6)**.
 
    >**Note:** Create the Content Safety resource in the same region where you have deployed the Azure AI services.
 
