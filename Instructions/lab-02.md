@@ -9,7 +9,7 @@ After completing this lab, you will be able to complete the following tasks:
 - **Task 01:** Create a standard classification flow
 - **Task 02:** Create a conversational RAG flow
 
-## Task 01: Create a standard classification flow
+## Task 01: Create a Standard Classification Flow
 
 1. In **Azure AI Studio**, navigate to **Tools > Prompt flow** and click on **+ Create**.
 
@@ -62,7 +62,7 @@ After completing this lab, you will be able to complete the following tasks:
 
 1. You can view the result of the processing by clicking the last node.
 
-## Task 02: Create a Conversational RAG flow
+## Task 02: Create a Conversational RAG Flow
 
 1. In **Azure AI Studio**, navigate to **Tools > Prompt flow** and click on **+ Create**.
 
