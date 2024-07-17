@@ -169,8 +169,8 @@ After completing this lab, you will be able to complete the following tasks:
 
 In this lab, you have performed  the following tasks:
 
-- Created a standard classification flow
-- Created a conversational RAG flow
+- Created a standard classification flow.
+- Created a conversational RAG flow.
 
 ### You have successfully completed the lab.
 
