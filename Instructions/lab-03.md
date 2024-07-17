@@ -129,22 +129,22 @@ After completing this lab, you will be able to complete the following tasks:
 
 1. In Azure AI Studio, navigate to **Tools > Prompt flow** and select the **Multi-Round Q&A on Your Data** chat flow.
 
-1. Select **Deploy** on the flow editor.
+1. Select **Deploy** in the flow editor.
 
    ![](media/multi-flow-deploy.png)
 
-1. On the **Basic settings** tab, configure the basic settings to deploy the endpoint in the deployment wizard and click on **Review + create**.
+1. On the **Basic settings** tab, configure the basic settings to deploy the endpoint in the deployment wizard, and click on **Review + create**.
 
-   - Virtual Machine: **Standard_E2s_v3** or any select the size.
+   - Virtual Machine: **Standard_E2s_v3** or select any other size.
    - Instance count: **1**
 
    ![](media/multi-flow-deploy-basic-settings.png)
 
 1. On the **Review** tab, click on **Create** to deploy the prompt flow.
 
-1. To view the status of your deployment, select Deployments from the left navigation. Once the deployment is created successfully, you can select the deployment to view the details.
+1. To view the status of your deployment, select **Deployments** from the left navigation. Once the deployment is created successfully, you can select the deployment to view the details.
 
-   >**Note:** This might take a while for the deployment to succeed. Wait for the deployment to **Succeed**.
+   >**Note:** This might take a while for the deployment to succeed. Wait for the deployment status to appear as **Succeed**.
 
    ![](media/endpoint-deployment.png)
 
@@ -161,16 +161,16 @@ After completing this lab, you will be able to complete the following tasks:
 <validation step="69c0b1c3-345d-49aa-9e22-e70838c77609" />
    
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-> - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+> - Click on the **Validate** button for the corresponding task. If you receive a success message, you can proceed to the next task. 
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-> - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+> - If you need any assistance, please contact us at **labs-support@spektrasystems.com**. We are available 24/7 to help you out.
 
 ## Review
 
 In this lab, you have performed  the following tasks:
 
-- Evaluated Chat Flow Performance and Robustness
-- Deployed and Managed RAG Flow to an Online Endpoint
+- Evaluated chat flow performance and robustness.
+- Deployed and managed RAG flow to an online endpoint.
 
 ### You have successfully completed the lab.
 
