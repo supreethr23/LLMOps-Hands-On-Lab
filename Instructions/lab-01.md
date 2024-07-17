@@ -395,14 +395,14 @@ After completing this lab, you will be able to complete the following tasks:
 
 In this lab, you have performed  the following tasks:
 
-- Created an AI Project and AI Hub Resources
-- Deployed Azure OpenAI Models
-- Created a Content Safety Service
-- Added an Azure Content Safety connection
-- Used Azure AI Studio Playground
-- Worked with an Open Source LLM Model
-- Tested the prompt in Content Safety
-- Created a Prompt Flow
+- Created an AI project and AI hub resources.
+- Deployed Azure OpenAI models.
+- Created a content safety service.
+- Added an Azure content safety connection.
+- Used Azure AI studio playground.
+- Worked with an open source LLM model.
+- Tested the prompt in content safety.
+- Created a prompt flow.
 
 ### You have successfully completed the lab.
 
