@@ -27,7 +27,7 @@ After completing this lab, you will be able to complete the following tasks:
 
    ![](media/create-new-project.png)
 
-1. On the Project Details section, enter a unique name for your project and click on **Next**.
+1. On the **Project details** section, enter a unique **name** for your project and select **Create a new Hub** option from the drop-down menu. Moving on, click on **Next**. 
 
    ![](media/new-project-name.png)
 
