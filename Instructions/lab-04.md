@@ -73,7 +73,7 @@ After completing this lab, you will be able to complete the following tasks:
 
 1. Configure the inputs for the *content_safety* tool by selecting the following values:
 
-   - connection: **Content Safety resource**
+   - connection: **contentsafety <inject key="Deployment-ID" enableCopy="false"/>**
    - text: **${inputs.topic}**
 
    ![](media/config-content-safety-inputs.png)

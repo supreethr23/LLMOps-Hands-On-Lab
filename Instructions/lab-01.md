@@ -31,7 +31,7 @@ After completing this lab, you will be able to complete the following tasks:
 
    ![](media/new-project-name.png)
 
-1. On the Create Hub section, configure the below values then click on **Next**.
+1. On the Create Hub section, configure the below values.
 
    - Hub name: **odl_user_<inject key="Deployment-ID" enableCopy="false"/>_ai**
    - Subscription: **Select your Default Subscription**
@@ -58,6 +58,8 @@ After completing this lab, you will be able to complete the following tasks:
    ![](media/azure-portal-resources.png)
 
 1. Within the selected Resource Group, in the left-hand menu, click on **Access control (IAM)**.
+
+   ![](media/1iam.png)
 
 1. In the Access Control (IAM) pane, click on the **+ Add** button at the top.
 

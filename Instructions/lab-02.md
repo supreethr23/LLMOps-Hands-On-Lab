@@ -44,7 +44,7 @@ After completing this lab, you will be able to complete the following tasks:
 
 1. We will use the Default_AzureOpenAI Connection and **gpt-4** deployment, which connects to the Azure OpenAI resource that was created when the Azure AI project was set up.
 
-   ![](media/chat-with-context.png)
+   ![](media/web-summarize-text-content.png)
 
 1. Associate the same Connection for the **classify_with_llm** step.
 
@@ -66,7 +66,7 @@ After completing this lab, you will be able to complete the following tasks:
 
 1. In the Azure AI Studio, navigate to **Tools > Prompt flow** and click on **+ Create**.
 
-   ![](media/multi-rag-flow.png)
+   ![](media/0.png)
 
 1. In the flow creation window, select the **Chat flow** filter in the **Explore gallery** section and click on **Clone** for the Multi-Round Q&A on Your Data.
 
@@ -150,9 +150,9 @@ After completing this lab, you will be able to complete the following tasks:
 
 1. Now, let us define the connections of the nodes that link with LLM models. Select your default connection value from the dropdown and select **gpt-4** for the deployment name for both **modify_query_with_history** and **chat_with_context** nodes.
 
-   ![](media/web-summarize-text-content.png)
+   ![](media/modify_query_with_history.png)
 
-   ![](media/web-classify-with-llm.png)
+   ![](media/chat-with-context.png)
 
 1. Click on **Save** after configuring the connections for the nodes.
 
