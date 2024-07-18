@@ -405,24 +405,3 @@ In this lab, you have performed  the following tasks:
 - Created a Prompt Flow
 
 ### You have successfully completed the lab.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
