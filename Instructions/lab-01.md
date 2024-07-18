@@ -31,11 +31,13 @@ After completing this lab, you will be able to complete the following tasks:
 
    ![](media/new-project-name.png)
 
-1. On the Create Hub section, configure the below values.
+1. On the Create Hub section, configure the below values then click on **Next**.
 
+   - Hub name: **odl_user_<inject key="Deployment-ID" enableCopy="false"/>_ai**
    - Subscription: **Select your Default Subscription**
    - Resource group: **llm-ops-<inject key="Deployment-ID" enableCopy="false"/>**
    - Location: **<inject key="Region" enableCopy="false"/>**
+   - Connect Azure AI Service or Azure OpenAI: **(new)ai-odl-user_<inject key="Deployment-ID" enableCopy="false"/>_ai**
 
    ![](media/create-new-hub.png)
 
