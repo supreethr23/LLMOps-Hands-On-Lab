@@ -135,20 +135,3 @@ In this lab, you have performed  the following tasks:
 - Added Content Safety to Your Solution
 
 ### You have successfully completed the lab.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
