@@ -1,38 +1,43 @@
 # Lab 01: Introduction to LLMs and Azure AI Services
 
-### Estimated Time: 60 mins
+### Estimated Time: 60 minutes
 
 ## Lab Objectives
 
 After completing this lab, you will be able to complete the following tasks:
 
-- Task 01: Create an AI Project and AI Hub Resources
-- Task 02: Deploy Azure OpenAI Models
-- Task 03: Create a Content Safety Service
-- Task 04: Add an Azure Content Safety connection
-- Task 05: Use Azure AI Studio Playground
-- Task 06: Work with an Open Source LLM Model
-- Task 07: Test the prompt in Content Safety
-- Task 08: Create a Prompt Flow
+- **Task 01:** Create an AI Project and AI Hub Resources
+- **Task 02:** Deploy Azure OpenAI Models
+- **Task 03:** Create a Content Safety Service
+- **Task 04:** Add an Azure Content Safety connection
+- **Task 05:** Use Azure AI Studio Playground
+- **Task 06:** Work with an Open Source LLM Model
+- **Task 07:** Test the prompt in Content Safety
+- **Task 08:** Create a Prompt Flow
 
 ## Task 01: Create an AI Project and AI Hub Resources
 
-1. Navigate to https://ai.azure.com to create a project in Azure AI Studio.
+1. Navigate to https://ai.azure.com to create a project in **Azure AI Studio**.
 
    ![](media/azure-ai-studio.png)
 
-1. Sign in to Azure AI Studio using the credentials from the **Environment** tab.
+1. Sign in to **Azure AI Studio** using the credentials from the **Environment** tab.
 
 1. Click on **+ New Project** to create a new project and hub.
 
    ![](media/create-new-project.png)
 
+1. In the **Project details** section, enter a unique name for your project and click on **Next**.
+
 1. On the **Project details** section, enter a unique **name** for your project and select **Create a new Hub** option from the drop-down menu. Moving on, click on **Next**. 
 
    ![](media/new-project-name.png)
 
-1. On the Create Hub section, configure the below values.
+1. On the **Create a Hub** section, configure the below values.
 
+   - Subscription: **Select your default subscription (2)**
+   - Resource group: **llm-ops-<inject key="Deployment-ID" enableCopy="false"/>** **(3)**
+   - Location: **<inject key="Region" enableCopy="false"/>** **(4)**
    - Hub name: **odl_user_<inject key="Deployment-ID" enableCopy="false"/>_ai**
    - Subscription: **Select your Default Subscription**
    - Resource group: **llm-ops-<inject key="Deployment-ID" enableCopy="false"/>**
@@ -41,45 +46,47 @@ After completing this lab, you will be able to complete the following tasks:
 
    ![](media/create-new-hub.png)
 
-1. Click on **Create new AI Search** for the Connect Azure AI Search option. Enter the name for your Azure AI Search and click on **Create**.
+1. Click on **Create new AI Search (1)** for the **Connect Azure AI Search** option. Enter the **name (2)** for your **Azure AI Search** and click on **Create**.
 
    ![](media/create-new-ai-search.png)
 
-1. On the Create Hub section, click on **Next**.
+1. On the **Create a Hub** section, click on **Next**.
 
    ![](media/create-hub-next.png)
 
-1. On the Review and finish section, review your Azure AI services, click on **Create a project** and wait for the deployments to succeed.
+1. In the **Review and finish** section, review your Azure AI services, click on **Create a project,** and wait for the deployments to succeed.
 
    ![](media/review-create-project.png)
 
-1. You can also navigate to your resource group in the Azure portal to verify the resources deployed.
+1. You can also navigate to your **Resource groups** section in the Azure portal to verify the resources deployed.
 
    ![](media/azure-portal-resources.png)
 
-1. Within the selected Resource Group, in the left-hand menu, click on **Access control (IAM)**.
+1. Within the selected **resource group**, in the left-hand menu, click on **Access control (IAM)**.
+
+1. In the **Access Control (IAM)** pane, click on the **+ Add** button at the top.
 
    ![](media/1iam.png)
 
 1. In the Access Control (IAM) pane, click on the **+ Add** button at the top.
 
-1. Select **Add role assignment** from the dropdown.
+1. Select **Add role assignment** from the drop-down.
 
-1. In the Add role assignment pane, you'll see a dropdown labeled **Role**.
+1. In the **Add role assignment** pane, you'll see a drop-down labeled **Role**.
 
-1. Click on the dropdown and select **Reader**. This role allows the user or entity to view all resources in the Resource Group but not make any changes.
+1. Click on the **drop-down** and select **Reader**. This role allows the user or entity to view all resources in the **resource group** but not make any changes.
 
-1. Under the **Assign access to** section, select **Managed identity (2)** .
+1. Under the **Assign access to** section, select **Managed identity (2)**.
 
-1. Click on **Select members (3)**.
+1. Click on **+ Select members (3)**.
 
-1. Select your **Subscription (4)** under Subscription and select **Azure AI project(1) (5)** Under Managed Identity.
+1. Select your **subscription (4)** under **Subscription** and select **Azure AI project (1) (5)** under **Managed identity**.
 
-1. In the Select pane, search for and select the specific project ID or managed identity associated with the AI project you are working on **(6)**.
+1. In the **Select** pane, search for and select the **specific project ID** or **managed identity associated with the AI project** you are working on **(6)**.
 
-1. Once selected, click **Select (7)** to confirm your choice.
+1. Once selected, click on **Select (7)** to confirm your choice.
 
-1. Click **Review + assign (8)** on the Members tab, and then click **Review + assign** again to complete the process.
+1. Click on **Review + assign (8)** within the **Members** tab, and then click **Review + assign** again to complete the process.
 
    ![](media/IAM.png)
 
@@ -90,25 +97,25 @@ After completing this lab, you will be able to complete the following tasks:
 <validation step="ee969cae-cf3c-46aa-b0fe-5bb362b64bef" />
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-> - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+> - Click on the **Validate** button for the corresponding task. If you receive a success message, you can proceed to the next task. 
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-> - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+> - If you need any assistance, please contact us at **labs-support@spektrasystems.com**. We are available 24/7 to help you out.
 
 ## Task 02: Deploy Azure OpenAI Models
 
-1. Navigate to **Components > Deployments** settings and click on **Create Deployment** to create an OpenAI model.
+1. Navigate to **Components > Deployments (1)** settings and click on **Create Deployment (2)** to create an OpenAI model.
    
    ![](media/deployments-create.png)
 
-1. Select **gpt-4** from the list of models and click on **Confirm**.
+1. Select **gpt-4 (1)** from the list of models and click on **Confirm (2)**.
 
    ![](media/gpt-4-deployment.png)
 
-1. On the *Deploy model gpt-4* pane, accept the default settings and click on **Deploy**.
+1. On the **Deploy model gpt-4** pane, accept the default settings and click on **Deploy**.
 
    ![](media/deploy-gpt-4-model01.png)
 
-1. Verify that the **gpt-4** model is present in the Deployments section.
+1. Verify that the **gpt-4** model is present in the **Deployments** section.
 
    ![](media/gpt-4-model-deployments.png)
 
@@ -118,37 +125,37 @@ After completing this lab, you will be able to complete the following tasks:
 
    ![](media/text-embedding-model.png)
 
-1. On the *Deploy model text-embedding-ada-002* pane, accept the default settings and click on **Deploy**.
+1. On the **Deploy model text-embedding-ada-002** pane, accept the default settings and click on **Deploy**.
 
    ![](media/deploy-text-embedding-model.png)
 
-1. Verify that the **text-embedding-ada-002** model is present in the Deployments section.
+1. Verify that the **text-embedding-ada-002** model is present in the **Deployments** section.
 
    ![](media/text-embedding-model-deployments.png)
 
 ## Task 03: Create a Content Safety Service
 
-1. Navigate to the Azure portal, and search for **Content Safety**.
+1. Navigate to the **Azure portal** and search for **content safety**.
 
    ![](media/search-content-safety.png)
 
-1. On the **Azure AI Serices | Content Safety** tab, click on **+ Create**.
+1. On the **Azure AI Serices | Content safety** tab, click on **+ Create**.
 
    ![](media/+create-content-safety.png)
 
-1. On the Create Content Safety **Basics** tab, configure the following resources and click on **Next**.
+1. On the **Create Content Safety** **Basics** tab, configure the following resources and click on **Next (6)**.
 
    >**Note:** Create the Content Safety resource in the same region where you have deployed the Azure AI services.
 
-   - Subscription: **Select your Default Subscription**
-   - Resource group: **llm-ops-<inject key="Deployment-ID" enableCopy="false"/>**
-   - Region: **<inject key="Region" enableCopy="false"/>**
-   - Name: **content-safety-<inject key="Deployment-ID" enableCopy="false"/>**
-   - Pricing tier: **Standard S0**
+   - Subscription: **Select your Default Subscription (1)**
+   - Resource group: **llm-ops-1377499<inject key="Deployment-ID" enableCopy="false"/> (2)**
+   - Region: **East US<inject key="Region" enableCopy="false"/> (3)**
+   - Name: **content-safety-1377499<inject key="Deployment-ID" enableCopy="false"/>(4)**
+   - Pricing tier: **Standard S0 (5)**
 
    ![](media/create-content-safety.png)
 
-1. On the **Identity** tab, verify that the System-assigned managed identity Status is turned **On**. Click on **Review + create** and then **Create**.
+1. On the **Identity** tab, verify that the **System-assigned managed identity Status** is turned **On**. Click on **Review + create** and then on the **Create** option.
 
    ![](media/create-content-safety-identity.png)
 
@@ -157,25 +164,25 @@ After completing this lab, you will be able to complete the following tasks:
 <validation step="071312be-06ef-4970-a4c0-5ff6deb9cc40" />
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-> - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+> - Click on the **Validate** button for the corresponding task. If you receive a success message, you can proceed to the next task. 
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-> - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+> - If you need any assistance, please contact us at **labs-support@spektrasystems.com**. We are available 24/7 to help you out.
 
 ## Task 04: Add an Azure Content Safety connection
 
-1. Navigate to your **odl_user_<inject key="Deployment-ID" enableCopy="false"/>-XXXX** project in Azure AI Studio.
+1. Navigate to your **odl_user_<inject key="Deployment-ID" enableCopy="false"/>-XXXX** project in **Azure AI Studio**.
 
    ![](media/project-select.png)
 
-1. On the project overview, navigate on **Settings** and click on **+ New connection** under Connected resources.
+1. On the **project overview** page, navigate to the **Settings** tab and click on **+ New connection** under **Connected resources**.
 
    ![](media/project-new-connection.png)
 
-1. On the *Add a connection to external assests* pane, click on **Azure AI Content Safety**.
+1. On the **Add a connection to external assets** pane, click on **Azure AI Content Safety**.
 
    ![](media/select-content-safety-connection.png)
 
-1. On the *Connect an Azure AI Content Safety resource* pane, click on **Add connection** for the existing Content Safety resource that you created in the previous task.
+1. On the **Connect an Azure AI Content Safety resource** pane, click on **Add connection** for the existing Content Safety resource that you had created in the previous task.
 
    ![](media/add-content-safety-connection.png)
 
@@ -183,13 +190,13 @@ After completing this lab, you will be able to complete the following tasks:
 
    ![](media/review-content-safety-connection.png)
 
-1. Navigate back to the **Settings > Connected resources** to verify the Azure Content Safety connection.
+1. Navigate back to **Settings > Connected resources** to verify the **Azure Content Safety connection**.
 
    ![](media/confirm-content-safety-connection.png)
 
 ## Task 05: Use Azure AI Studio Playground
 
-1. In your Azure AI Studio, navigate to the **gpt-4** deployment under the Deployments settings.
+1. In your **Azure AI Studio**, navigate to the **gpt-4** deployment under the **Deployments** option.
 
    ![](media/gpt-4-model-deployments.png)
 
@@ -199,7 +206,7 @@ After completing this lab, you will be able to complete the following tasks:
 
 1. Let us run an example where the model will help us summarize and extract information from a conversation between a customer and a representative of a telco company.
 
-1. Copy the following prompt into the system message field of the playground and click on **Apply changes**.
+1. Copy the following prompt into the **System message** field of the **Chat playground** and click on **Apply changes**.
 
    ```
    You're an AI assistant that helps telco company to extract valuable information from their conversations by creating JSON files for each conversation transcription you receive. You always try to extract and format it as a JSON:
@@ -216,11 +223,11 @@ After completing this lab, you will be able to complete the following tasks:
 
    ![](media/gpt-4-apply-changes.png)
 
-   >**Note:** If you receive a *Update systems message?* pop-up, enable the **Do not show this again** and click on **Continue**.
+   >**Note:** If you receive an **"Update systems message?"** pop-up, enable **Do not show this again,** and click on **Continue**.
 
    ![](media/update-sys-msg.png)
    
-1. Copy the following text in the chat session and click the send button.
+1. Copy the following text in the **chat session** and click on the **send** button.
 
    ```
    Agent: Hello, welcome to Telco's customer service. My name is Juan, how can I assist you?
@@ -248,7 +255,7 @@ After completing this lab, you will be able to complete the following tasks:
 
    ![](media/chat-msg-send.png)
 
-1. You will see a result generated by the model similar to the one shown in the image below. Notice that the model correctly followed the instructions indicated in the System message field.
+1. You will see a result generated by the model similar to the one shown in the image below. Notice that the model has correctly followed the instructions indicated in the **System message** field.
 
    ```
    {
@@ -266,15 +273,15 @@ After completing this lab, you will be able to complete the following tasks:
    
 ## Task 06: Work with an Open Source LLM Model
 
-1. Now let's test an open source Llama2 model from Meta. Navigate to **Components > Deployments** settings and click on **Create Deployment** to create an OpenAI model.
+1. Now let's test an **open-source Llama2 model** from Meta. Navigate to **Components > Deployments (1)** settings and click on **+ Create deployment (2)** to create an **OpenAI model**.
 
    ![](media/deployments-create.png)
 
-1. Search for and select **Llama-2-13b-chat** from the list of models and click on **Confirm**.
+1. Search for and select **Llama-2-13b-chat** from the list of models, and click on **Confirm**.
 
    ![](media/llama-chat-model-confirm.png)
 
-1. On the Deployments options tab, click on **Serverless API with Azure AI Content Safety**.
+1. On the **Deployment options** tab, click on **Serverless API with Azure AI Content Safety**.
 
    ![](media/llama-serverless-api.png)
 
@@ -282,29 +289,29 @@ After completing this lab, you will be able to complete the following tasks:
 
    ![](media/llama-subs-and-deploy.png)
 
-1. Once the **Serverless API deployment for Llama-2-13b-chat** deployment succeeds, click on **Deploy** on the **Deploy Llama-2-13b-chat**.
+1. Once the **Serverless API deployment for Llama-2-13b-chat** deployment succeeds, click on the **Deploy** option on the **Deploy Llama-2-13b-chat**.
 
    ![](media/llama-chat-model-deploy.png)
 
-1. Wait for the chat model provisioning state to get **Succeeded** before using the deployment.
+1. Wait for the chat model provisioning state to appear as **Succeeded** before using the deployment.
 
    ![](media/llama-provisioning-state.png)
 
-1. On the **Llama-2-13b-chat** deployment details, click on **Open in playground** to start using the Open Source LLM Model.
+1. On the **Llama-2-13b-chat** deployment details, click on **Open in playground** to start using the **Open Source LLM Model**.
 
    ![](media/llama-open-in-playground.png)
 
 ## Task 07: Test the prompt in Content Safety
 
-1. On your Azure AI Studio, navigate to **AI Services** and click on the **Content Safety** box to get started with Content Safety Studio.
+1. On your **Azure AI Studio,** navigate to **AI Services** and click on the **Content Safety** box to get started with **Content Safety Studio**.
 
    ![](media/ai-services-content-safety.png)
 
-1. On the **Content Safety** studio, click on the **Moderate Text Content** to try out the prompt.
+1. On the **Content Safety** studio, click on the **Moderate text content** option to try out the prompt.
 
    ![](media/content-safety-studio.png)
 
-1. On the **Moderate Text Content** window, select the content safety resource from the **Azure AI Services** dropdown.
+1. On the **Moderate text content** window, select the **content safety resource** from the **Azure AI services resources** dropdown.
 
    ![](media/content-safety-resource-select.png)
 
@@ -343,15 +350,15 @@ After completing this lab, you will be able to complete the following tasks:
 
 ## Task 08: Create a Prompt Flow
 
-1. Navigate to the **gpt-4** deployment under the Deployments settings in your Azure AI Studio.
+1. Navigate to the **gpt-4** deployment under the **Deployments** settings in your **Azure AI Studio**.
 
    ![](media/gpt-4-model-deployments.png)
 
-1. Perform the same steps that you performed in **Task 04** by adding the same system message, applying the changes and fetching the response. Once the response is generated, click on **Prompt flow**.
+1. Perform the same steps that you performed in **Task 04** by adding the same system message, applying the changes, and fetching the response. Once the response is generated, click on **Prompt flow**.
 
    ![](media/chat-playground-prompt-flow.png)
 
-1. On the **Orchestrate and customize this setup with promt flow**, click on **Open**. This will create a new prompt flow.
+1. On **"Orchestrate and customize this setup with promt flow,"** click on **Open**. This will create a new prompt flow.
 
    ![](media/prompt-flow-open.png)
 
@@ -363,11 +370,11 @@ After completing this lab, you will be able to complete the following tasks:
 
    ![](media/prompt-flow-start-compute.png)
 
-1. Configure the connection settings with the AI service and the gpt-4 deployment for the **chat** node and then click on **Chat** button to test your flow in the chat window.
+1. Configure the connection settings with the AI service and the gpt-4 deployment for the **chat** node, and then click on the **Chat** button to test your flow in the **chat window**.
 
    ![](media/prompt-flow-connection-chat.png)
 
-1. In the chat window, copy and paste the below conversation and click on send to view the expected response.
+1. In the **chat window**, copy and paste the below conversation and click on **send** to view the expected response.
 
    ```
    Agent: Hello, welcome to Telco's customer service. My name is Juan, how can I assist you?
@@ -399,13 +406,13 @@ After completing this lab, you will be able to complete the following tasks:
 
 In this lab, you have performed  the following tasks:
 
-- Created an AI Project and AI Hub Resources
-- Deployed Azure OpenAI Models
-- Created a Content Safety Service
-- Added an Azure Content Safety connection
-- Used Azure AI Studio Playground
-- Worked with an Open Source LLM Model
-- Tested the prompt in Content Safety
-- Created a Prompt Flow
+- Created an AI project and AI hub resources.
+- Deployed Azure OpenAI models.
+- Created a content safety service.
+- Added an Azure content safety connection.
+- Used Azure AI studio playground.
+- Worked with an open source LLM model.
+- Tested the prompt in content safety.
+- Created a prompt flow.
 
 ### You have successfully completed the lab.
