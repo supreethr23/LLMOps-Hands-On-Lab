@@ -1,6 +1,10 @@
 # Lab 03: Evaluating and Deploying LLMs
 
-### Estimated Time: 60 minutes
+### Estimated Duration: 60 minutes
+
+## Overview
+
+Participants will assess the performance and reliability of their chat flows and then deploy and manage the Retrieval-Augmented Generation (RAG) flow in a live online environment.
 
 ## Lab Objectives
 
@@ -173,7 +177,7 @@ After completing this lab, you will be able to complete the following tasks:
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
 > - If you need any assistance, please contact us at **labs-support@spektrasystems.com**. We are available 24/7 to help you out.
 
-## Review
+## Summary
 
 In this lab, you have performed  the following tasks:
 
