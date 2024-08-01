@@ -1,6 +1,10 @@
 # Lab 02: Building LLM Orchestration Flows
 
-### Estimated Time: 60 minutes
+### Estimated Duration: 60 minutes
+
+## Overview
+
+Participants will develop a **Standard Classification Flow** for categorizing data and a **Conversational RAG Flow** for enhancing AI conversations with contextually relevant information retrieval and response generation.
 
 ## Lab Objectives
 
@@ -165,7 +169,7 @@ After completing this lab, you will be able to complete the following tasks:
    ![](media/multi-rag-flow-chat-box.png)
 
 
-## Review
+## Summary
 
 In this lab, you have performed  the following tasks:
 
