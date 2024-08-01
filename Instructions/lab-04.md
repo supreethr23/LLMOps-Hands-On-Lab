@@ -1,6 +1,10 @@
 ## Lab 04: Monitoring and Responsible AI 
 
-### Estimated Time: 60 minutes
+### Estimated Duration: 60 minutes
+
+## Overview
+
+Participants will monitor their LLM's performance and integrate content safety features to ensure both efficient operation and compliance with moderation standards.
 
 ## Lab Objectives
 
@@ -127,7 +131,7 @@ After completing this lab, you will be able to complete the following tasks:
 
    ![](media/generate-result-joke-output.png)
 
-## Review
+## Summary
 
 In this lab, you have performed  the following tasks:
 
