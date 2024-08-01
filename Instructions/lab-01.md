@@ -1,6 +1,10 @@
 # Lab 01: Introduction to LLMs and Azure AI Services
 
-### Estimated Time: 60 minutes
+### Estimated Duration: 60 minutes
+
+## Overview
+
+Participants will set up an AI project and hub, deploy Azure OpenAI models, and integrate content safety services. They will use the Azure AI Studio Playground to test models, work with open-source LLMs, and create and manage prompt flows, ensuring safe and effective AI interactions.
 
 ## Lab Objectives
 
