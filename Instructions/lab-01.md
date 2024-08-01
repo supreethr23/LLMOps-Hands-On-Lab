@@ -29,6 +29,8 @@ After completing this lab, you will be able to complete the following tasks:
 
 1. In the **Project details** section, enter a unique name for your project and click on **Next**.
 
+1. On the **Project details** section, enter a unique **name** for your project and select **Create a new Hub** option from the drop-down menu. Moving on, click on **Next**. 
+
    ![](media/new-project-name.png)
 
 1. On the **Create a Hub** section, configure the below values.
@@ -36,6 +38,11 @@ After completing this lab, you will be able to complete the following tasks:
    - Subscription: **Select your default subscription (2)**
    - Resource group: **llm-ops-<inject key="Deployment-ID" enableCopy="false"/>** **(3)**
    - Location: **<inject key="Region" enableCopy="false"/>** **(4)**
+   - Hub name: **odl_user_<inject key="Deployment-ID" enableCopy="false"/>_ai**
+   - Subscription: **Select your Default Subscription**
+   - Resource group: **llm-ops-<inject key="Deployment-ID" enableCopy="false"/>**
+   - Location: **<inject key="Region" enableCopy="false"/>**
+   - Connect Azure AI Service or Azure OpenAI: **(new)ai-odl-user_<inject key="Deployment-ID" enableCopy="false"/>_ai**
 
    ![](media/create-new-hub.png)
 
@@ -58,6 +65,10 @@ After completing this lab, you will be able to complete the following tasks:
 1. Within the selected **resource group**, in the left-hand menu, click on **Access control (IAM)**.
 
 1. In the **Access Control (IAM)** pane, click on the **+ Add** button at the top.
+
+   ![](media/1iam.png)
+
+1. In the Access Control (IAM) pane, click on the **+ Add** button at the top.
 
 1. Select **Add role assignment** from the drop-down.
 
@@ -405,24 +416,3 @@ In this lab, you have performed  the following tasks:
 - Created a prompt flow.
 
 ### You have successfully completed the lab.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

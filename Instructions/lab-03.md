@@ -15,6 +15,10 @@ After completing this lab, you will be able to complete the following tasks:
 
 1. Create a new output named **documents (1)** in the **Outputs** node. This output will represent the documents that were retrieved in the **lookup** node and subsequently formatted in the **generate_prompt_context.output** node. Assign the output of the **generate_prompt_context.output (2)** node to the output of the document.
 
+   ![](media/multi-rag-flow.png)
+
+1. Create a new output named **documents** in the Outputs node. This output will represent the documents that were retrieved in the **lookup** node and subsequently formatted in the **generate_prompt_context** node. Assign the output of the generate_prompt_context node to the output of the document.
+
    ![](media/new-output-documents.png)
 
 1. Click **Save** before moving on to the next steps.
@@ -136,6 +140,10 @@ After completing this lab, you will be able to complete the following tasks:
 1. On the **Basic settings** tab, configure the basic settings to deploy the endpoint in the deployment wizard, and click on **Review + create**.
 
    - Virtual Machine: **Standard_E2s_v3** or select any other size.
+   - Endpoint: **New** 
+   - Endpoint Name: **odl-user-<inject key="Deployment-ID" enableCopy="false"/>-xxxx-xxxx**
+   - Deployment name: **odl-user-<inject key="Deployment-ID" enableCopy="false"/>-xxxx-xxxx**
+   - Virtual Machine: **Standard_E2s_v3** or any select the size.
    - Instance count: **1**
 
    ![](media/multi-flow-deploy-basic-settings.png)
@@ -173,13 +181,6 @@ In this lab, you have performed  the following tasks:
 - Deployed and managed RAG flow to an online endpoint.
 
 ### You have successfully completed the lab.
-
-
-
-
-
-
-
 
 
 
