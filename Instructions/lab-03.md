@@ -10,8 +10,8 @@ Participants will assess the performance and reliability of their chat flows and
 
 After completing this lab, you will be able to complete the following tasks:
 
-- **Task 01:** Evaluate Chat Flow Performance and Robustness
-- **Task 02:** Deploy and Manage RAG Flow to an Online Endpoint
+- Task 01: Evaluate Chat Flow Performance and Robustness
+- Task 02: Deploy and Manage RAG Flow to an Online Endpoint
 
 ## Task 01: Evaluate Chat Flow Performance and Robustness
 
