@@ -10,8 +10,8 @@ Participants will monitor their LLM's performance and integrate content safety f
 
 After completing this lab, you will be able to complete the following tasks:
 
-- **Task 01:** Monitoring your LLM's flow
-- **Task 02:** Add Content Safety to Your Solution
+- Task 01: Monitoring your LLM's flow
+- Task 02: Add Content Safety to Your Solution
 
 ## Task 01: Monitoring your LLM's flow
 
