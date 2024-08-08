@@ -10,14 +10,14 @@ Participants will set up an AI project and hub, deploy Azure OpenAI models, and 
 
 After completing this lab, you will be able to complete the following tasks:
 
-- **Task 01:** Create an AI Project and AI Hub Resources
-- **Task 02:** Deploy Azure OpenAI Models
-- **Task 03:** Create a Content Safety Service
-- **Task 04:** Add an Azure Content Safety connection
-- **Task 05:** Use Azure AI Studio Playground
-- **Task 06:** Work with an Open Source LLM Model
-- **Task 07:** Test the prompt in Content Safety
-- **Task 08:** Create a Prompt Flow
+- Task 01: Create an AI Project and AI Hub Resources
+- Task 02: Deploy Azure OpenAI Models
+- Task 03: Create a Content Safety Service
+- Task 04: Add an Azure Content Safety connection
+- Task 05: Use Azure AI Studio Playground
+- Task 06: Work with an Open Source LLM Model
+- Task 07: Test the prompt in Content Safety
+- Task 08: Create a Prompt Flow
 
 ## Task 01: Create an AI Project and AI Hub Resources
 
