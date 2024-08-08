@@ -1,4 +1,4 @@
-## Lab 04: Monitoring and Responsible AI 
+# Lab 04: Monitoring and Responsible AI 
 
 ### Estimated Duration: 60 minutes
 
