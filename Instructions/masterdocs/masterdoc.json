@@ -22,6 +22,14 @@
       {
         "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/LLMOps-Hands-On-Lab/main/Instructions/lab-04.md",
         "Order": 5
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/LLMOps-Hands-On-Lab/main/Instructions/lab-05.md",
+        "Order": 6
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/LLMOps-Hands-On-Lab/main/Instructions/lab-06.md",
+        "Order": 7
       }
     ]
   }
