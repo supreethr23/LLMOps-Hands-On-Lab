@@ -28,11 +28,23 @@ In this section, you will learn how to start a new project using a project templ
 
 1. On the **Getting started** pop-up select the following options to create the storage account:
 
-    - **No storage account required (1)**
+    - Select **Mount storage account (1)**
     - Subscription: **Select your subscription (2)**
     - Select **Apply (3)**
 
-        ![Environments Page](media/getting-started.png)
+        ![Environments Page](media/getting-started-01.png)
+   - On **Mount storage account** pop-up, select **I want to create a storage account (1)**. Select **Next (2)**.
+     
+        ![Environments Page](media/mount-storage-account.png)
+
+     - On the **Create storage account** pop-up, enter all the details:-
+     - Subscription: Select the subscription (1)
+     - Resource group: Select **llm-ops-<inject key="DeploymentID" enableCopy="false"/> (2)**
+     - Region: Select **<inject key="Location"></inject> (3)**
+     - Storage account name: Enter **blob<inject key="DeploymentID" enableCopy="false"/> (4)**
+     - File share: Enter **fs<inject key="DeploymentID" enableCopy="false"/> (5)**
+     - Select **Next (6)**
+        ![Environments Page](media/storage-account(1).png)
 
 1. Clone the repository from GitHub into a temporary directory:
 
