@@ -62,10 +62,10 @@ In this section, you will learn how to start a new project using a project templ
 
    - GitHub Repo Creation (related to the new repository to be created)
      - `github_username`: Your GitHub **username**.
-     - `github_use_ssh`: Set to **true** to interact with GitHub repos using [SSH](https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-ssh-urls), **false** to use [HTTPS](https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls).
-     - `github_template_repo`: The project template repository. Ex: *azure/llmops-project-template*.
-     - `github_new_repo`: The bootstrapped project repo to be created. Ex *placerda/my-rag-project*.
-     - `github_new_repo_visibility`: Visibility of the new repository, choose **public**, **private** or **internal**.
+     - `github_use_ssh`: Set **false** to use [HTTPS](https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls).
+     - `github_template_repo`: The project template repository, enter *azure/llmops-project-template*.
+     - `github_new_repo`: The bootstrapped project repo to be created, enter *githubusername/my-rag-project*.
+     - `github_new_repo_visibility`: Visibility of the new repository, choose **public**.
 
         > For private or internal repositories, you must use GitHub Pro, GitHub Team, or GitHub Enterprise.
 
@@ -74,9 +74,9 @@ In this section, you will learn how to start a new project using a project templ
      
           > If you set it to **false**, you will need to manually create the environment for the project.
 
-     - `azd_dev_env_name`: The name of the development environment. Ex: *rag-project-dev*.
-     - `azd_dev_env_subscription`: Your Azure subscription ID.
-     - `azd_dev_env_location`: The Azure region for your dev environment. Ex: *eastus2*.
+     - `azd_dev_env_name`: The name of the development environment, enter *rag-project-dev*.
+     - `azd_dev_env_subscription`: Your subscription ID.
+     - `azd_dev_env_location`: The Azure region for your dev environment, enter <inject key="Location"></inject>.
 
         > **Note:** The dev environment resources will be created in the selected subscription and region. This decision should consider the quota available for the resources to be created in the region, as well as the fact that some resources have specific features enabled only in certain regions. Therefore, ensure that the resources to be created by the IaC of your template project have quota and availability in the chosen subscription and region. More information about the resources to be created can be found on the template page, as shown in this project template example: [LLMOps Project Template Resources](https://github.com/Azure/llmops-project-template/blob/main/README.md#project-resources).
 
@@ -136,13 +136,11 @@ In this section, you will learn how to start a new project using a project templ
 
 1. Set GitHub Environment Variables. Go to the newly created project repository and set the following GitHub environment variables and secret for three environments: `dev`, `qa`, and `prod`.
 
-   - **Environment Variables:**
-     - `AZURE_ENV_NAME`
-     - `AZURE_LOCATION`
-     - `AZURE_SUBSCRIPTION_ID`
-   
-   - **Secret:**
-     - `AZURE_CREDENTIALS`
+    | **Environment Variables**| Values |
+    |------------|------------|
+    | `AZURE_ENV_NAME`| rag-project-dev| 
+    | `AZURE_LOCATION`| <inject key="Location"></inject>|
+    | `AZURE_SUBSCRIPTION_ID`| your-subscription-id|
 
 1. Open GitHub with the credentials, select **Settings**. From the left navigation pane select **Environments**, after creating the variables and secret, your Environments page should resemble the following example:
    
@@ -157,7 +155,7 @@ In this section, you will learn how to start a new project using a project templ
    ```json
    {
        "clientId": "your-client-id",
-       "clientSecret": "your-client-secret",
+       "clientSecret": "your-secret-key",
        "subscriptionId": "your-subscription-id",
        "tenantId": "your-tenant-id"
    }
@@ -165,7 +163,7 @@ In this section, you will learn how to start a new project using a project templ
 
     ![Environment Variables](media/enviornment-variables.png)
 
-   >**Note:** You can check all the values on the **Environment > Service Principal** details page.
+   >**Note:** You can check all the values on the **Environment > Service Principal Details** page.
 
 1. Select **Actions** and ensure that GitHub Actions are enabled in your repository.
 
