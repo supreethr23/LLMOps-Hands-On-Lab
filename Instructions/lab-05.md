@@ -121,7 +121,7 @@ In this section, you will learn how to start a new project using a project templ
         > 6. Press Enter to open github.com in your browser. 
         > 7. Press **CTRL and Click** on the following link: https://github.com/login/device.
         > 8. On the **Device Activation** page, select **Continue**.
-            ![](media/github-continue.png)
+        ![](media/github-continue.png)
         > 9. Paste your activation code that you copied from the Azure CLI page.
         > 10. On the **Authorize GitHub CLI** page, select **Authorize github**.
         > 11. Navigate back to the **Azure CLI** you'll see that you are logged in.
@@ -164,6 +164,8 @@ In this section, you will learn how to start a new project using a project templ
    ```
 
     ![Environment Variables](media/enviornment-variables.png)
+
+   >**Note:** You can check all the values on the **Environment > Service Principal** details page.
 
 1. Select **Actions** and ensure that GitHub Actions are enabled in your repository.
 
