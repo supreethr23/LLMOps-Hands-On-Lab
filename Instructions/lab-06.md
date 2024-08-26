@@ -8,7 +8,7 @@ In this lab, you will set up and execute a load test on an Azure OpenAI model de
 
 ## Lab Objectives
 
-By the end of this lab, you will be able to:
+After completing this lab, you will be able to complete the following tasks:
 
 - Set up the Azure OpenAI Benchmarking Tool.
 - Execute load tests on an Azure OpenAI deployment.
