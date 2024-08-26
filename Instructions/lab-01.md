@@ -219,7 +219,7 @@ After completing this lab, you will be able to complete the following tasks:
    6. What was the FINAL Outcome of the Conversation [outcome]
    7. A really brief Summary of the Conversation [summary]
 
-   Only extract information that you're sure. If you're unsure, write "Unknown/Not Found" in the JSON file.
+   Only extract information that you're sure of. If you're unsure, write "Unknown/Not Found" in the JSON file.
    ```
 
    ![](media/gpt-4-apply-changes.png)
@@ -249,7 +249,7 @@ After completing this lab, you will be able to complete the following tasks:
    Client: Mmm, I don't know. Isn't there another option? Can't you give me more speed without charging me more?
    Agent: I'm sorry, Mr. Pérez. That's the only option we have available. If you don't change your plan, you'll have to wait until next month to recover your normal speed. Or you can buy an additional data package, but it would be more expensive than changing plans.
    Client: Well, let me think about it. Can I call later to confirm?
-   Agent: Of course, Mr. Pérez. You can call whenever you want. The number is the same one you dialed now. Is there anything else I can help you with?
+   Agent: Of course, Mr. Pérez. You can call whenever you want. The number is the same one you dialled now. Is there anything else I can help you with?
    Client: No, that's all. Thank you for your attention.
    Agent: Thank you, Mr. Pérez. Have a good day. Goodbye.
    ```
@@ -321,7 +321,7 @@ After completing this lab, you will be able to complete the following tasks:
    ```
    You're an AI assistant that helps telco company to extract valuable information from their conversations by creating JSON files for each conversation transcription you receive. 
 
-   You always try to extract and format as a JSON, fields names between square brackets:
+   You always try to extract and format as a JSON, field names between square brackets:
 
    1. Customer Name [name]
    2. Customer Contact Phone [phone]
@@ -359,7 +359,7 @@ After completing this lab, you will be able to complete the following tasks:
 
    ![](media/chat-playground-prompt-flow.png)
 
-1. On **"Orchestrate and customize this setup with promt flow,"** click on **Open**. This will create a new prompt flow.
+1. On **"Orchestrate and customize this setup with prompt flow,"** click on **Open**. This will create a new prompt flow.
 
    ![](media/prompt-flow-open.png)
 
@@ -371,7 +371,7 @@ After completing this lab, you will be able to complete the following tasks:
 
    ![](media/prompt-flow-start-compute.png)
 
-1. Configure the connection settings with the AI service and the gpt-4 deployment for the **chat** node, and then click on the **Chat** button to test your flow in the **chat window**.
+1. Configure the connection settings with the AI service and the GPT-4 deployment for the **chat** node, and then click on the **Chat** button to test your flow in the **chat window**.
 
    ![](media/prompt-flow-connection-chat.png)
 
@@ -396,7 +396,7 @@ After completing this lab, you will be able to complete the following tasks:
    Client: Mmm, I don't know. Isn't there another option? Can't you give me more speed without charging me more?
    Agent: I'm sorry, Mr. Pérez. That's the only option we have available. If you don't change your plan, you'll have to wait until next month to recover your normal speed. Or you can buy an additional data package, but it would be more expensive than changing plans.
    Client: Well, let me think about it. Can I call later to confirm?
-   Agent: Of course, Mr. Pérez. You can call whenever you want. The number is the same one you dialed now. Is there anything else I can help you with?
+   Agent: Of course, Mr. Pérez. You can call whenever you want. The number is the same one you dialled now. Is there anything else I can help you with?
    Client: No, that's all. Thank you for your attention.
    Agent: Thank you, Mr. Pérez. Have a good day. Goodbye.
    ```
@@ -412,7 +412,7 @@ In this lab, you have performed  the following tasks:
 - Created a content safety service.
 - Added an Azure content safety connection.
 - Used Azure AI studio playground.
-- Worked with an open source LLM model.
+- Worked with an open-source LLM model.
 - Tested the prompt in content safety.
 - Created a prompt flow.
 
