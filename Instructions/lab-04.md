@@ -55,7 +55,7 @@ After completing this lab, you will be able to complete the following tasks:
 
    ![](media/standard-joke-flow-structure.png)
 
-1. In the **standard-joke-flow**, delete the **echo** node, as you will be adding two Python nodes to process the output from the **Content Safety** tool. Determine whether to proceed with the standard flow or not, and craft a default response. Click on the **Delete step** once the **Confirm Deletion** pop-up appears.
+1. In the **standard-joke-flow**, delete the **echo** node, as you will be adding two Python nodes to process the output from the **Content Safety** tool. Determine whether to proceed with the standard flow or not and craft a default response. Click on the **Delete step** once the **Confirm Deletion** pop-up appears.
 
    ![](media/standard-flow-delete-echo.png)
 
