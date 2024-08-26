@@ -84,7 +84,6 @@ By the end of this lab, you will be able to:
 
 1. Copy the following details and store in a notepad.
 
-
    - **Azure OpenAI deployment name (1)**
    - **Azure OpenAI resource name (2)**
    - **Azure OpenAI API key (3)**
