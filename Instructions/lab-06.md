@@ -1,12 +1,12 @@
-### Lab 06: LLM Performance Testing
+# Lab 06: LLM Performance Testing
 
----
+### Estimated Duration: 60 minutes
 
 ## Overview
 
-In this exercise, you will set up and execute a load test on an Azure OpenAI model deployment using the Azure OpenAI Benchmarking Tool. You will learn to configure the test environment, run tests, and analyze results to understand the model's performance under various scenarios.
+In this lab, you will set up and execute a load test on an Azure OpenAI model deployment using the Azure OpenAI Benchmarking Tool. You will learn to configure the test environment, run tests, and analyze results to understand the model's performance under various scenarios.
 
-### Lab Objectives
+## Lab Objectives
 
 By the end of this lab, you will be able to:
 
@@ -15,15 +15,13 @@ By the end of this lab, you will be able to:
 - Execute load tests on an Azure OpenAI deployment.
 - Analyze and interpret the results of the load tests.
 
----
-
 ## Task 01: Bootstrapping a New Project
 
-1. **Open Git Bash**: From the VM desktop, click on **Search**, type **Git Bash**, and select it from the search results. 
+1. To open Git Bash, click on Search from the VM desktop, type **Git Bash**, and select it from the results. 
 
    ![Git](media/Git.png)
 
-2. **Clone the Workshop Repository**: Run the following command in Git Bash to clone the workshop repository:
+2. In Git Bash, run the following command to clone the workshop repository:
 
    ```bash
    git clone https://github.com/microsoft/llmops-workshop.git
@@ -31,52 +29,51 @@ By the end of this lab, you will be able to:
 
    ![clone1](media/gitclone1.png)
 
-3. **Navigate to the Performance Lab Directory**: Change to the directory where you cloned the repository:
+3. Navigate to the Performance Lab directory where you cloned the repository:
 
    ```bash
    cd llmops-workshop/labs/performance
    ```
 
-4. **Install Required Libraries**: Install the necessary Python libraries by running:
+4. Run the following command to install the necessary Python libraries:
 
    ```bash
    pip install -r requirements.txt
    ```
 
-5. **Clone the Benchmarking Tool Repository**: Clone the Azure OpenAI Benchmarking Tool repository with:
+5. Run the following command to clone the Azure OpenAI Benchmarking Tool repository with:
 
    ```bash
    git clone https://github.com/Azure/azure-openai-benchmark
    ```
 
-6. **Install Libraries for the Benchmarking Tool**: Navigate to the `azure-openai-benchmark` directory and install the required libraries:
+6. Navigate to the **azure-openai-benchmark** directory and install the required libraries:
 
    ```bash
    pip install -r azure-openai-benchmark/requirements.txt
    ```
 
-   At this point, you have cloned the necessary repositories and installed the required libraries.
-
-7. **Rename and Update Benchmark Parameters**: Rename the `benchmark.parameters.template` file to `benchmark.parameters`:
+7. Rename the `benchmark.parameters.template` file to `benchmark.parameters`:
 
    ```bash
    mv benchmark.parameters.template benchmark.parameters
    ```
 
-8. **Retrieve Azure OpenAI Details**: Navigate to [ai.azure.com](https://ai.azure.com) and sign in. Open **Projects**, then **Deployments**. Find your `gpt-35-turbo-16k` deployment and copy the following details:
+8. Navigate to [ai.azure.com](https://ai.azure.com) and sign in. Open **Projects**, then **Deployments**. Find your `gpt-35-turbo-16k` deployment and copy the following details:
+
    - **Azure OpenAI API key**
    - **Azure OpenAI resource name**
    - **Azure OpenAI deployment name**
 
    Store these details in a notepad.
 
-9. **Open the Code Editor**: Open Visual Studio Code by running:
+9. Run the following commands to open the code editor: 
 
    ```bash
    code .
    ```
 
-10. **Update Benchmark Parameters**: In the `benchmark.parameters` file, replace the first four lines with your values:
+10. In the `benchmark.parameters` file, replace the first four lines with your values:
 
     ```bash
     export OPENAI_API_KEY=[Your Azure OpenAI API key]
@@ -87,11 +84,9 @@ By the end of this lab, you will be able to:
 
     ![connectionstring](media/coconntstrings2.png)
 
----
-
 ## Task 02: Running the Performance Test
 
-1. **Run the Benchmark Test**: Start the test by executing:
+1. Run the following command to start the test:
 
    ```bash
    bash ./runtest.sh
@@ -116,7 +111,6 @@ By the end of this lab, you will be able to:
 
    You have now updated the benchmark parameters and executed the performance tests.
 
----
 
 ## Task 03: Analyzing the Results
 
