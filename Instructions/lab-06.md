@@ -10,12 +10,11 @@ In this lab, you will set up and execute a load test on an Azure OpenAI model de
 
 By the end of this lab, you will be able to:
 
-- Bootstrap a new project for LLM performance testing.
 - Set up the Azure OpenAI Benchmarking Tool.
 - Execute load tests on an Azure OpenAI deployment.
 - Analyze and interpret the results of the load tests.
 
-## Task 01: Bootstrapping a New Project
+## Task 01: Azure OpenAI Benchmarking Tool
 
 1. To open Git Bash, click on Search from the VM desktop, type **Git Bash**, and select it from the results. 
 
@@ -147,7 +146,6 @@ By the end of this lab, you will be able to:
 
 In this lab, you have performed the following tasks:
 
-- Bootstrap a new project for LLM performance testing.
 - Set up the Azure OpenAI Benchmarking Tool.
 - Execute load tests on an Azure OpenAI deployment.
 - Analyze and interpret the results of the load tests.
