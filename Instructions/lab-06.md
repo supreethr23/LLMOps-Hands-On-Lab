@@ -78,9 +78,17 @@ By the end of this lab, you will be able to:
 
    ![clone1](media/26-08-2024(8).png)
 
-1. Once the studio is opened, go to **Deployments (1)** under Shared resources and click on **gpt-35-turbo-16k (2)** model deployment.
+1. Go to **Deployments** under Shared resources in the left pane.
 
-   ![clone1](media/26-08-2024(10).png)
+   ![clone1](media/26-08-2024(21).png)
+
+1. Click on **Deploy model (1) > Deploy base model (2)**.
+
+   ![clone1](media/26-08-2024(20).png)
+
+1. Leave the value as default, click on **Deploy**.
+
+   ![clone1](media/26-08-2024(22).png)
 
 1. Copy the following details and store them in a notepad.
 
