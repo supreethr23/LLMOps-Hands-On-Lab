@@ -16,7 +16,7 @@ By the end of this lab, you will be able to:
 
 ## Task 01: Azure OpenAI Benchmarking Tool
 
-1. To open Git Bash, click on Search from the VM desktop, type **Git Bash**, and select it from the results. 
+1. To open Git Bash, click on the Search bar from the VM desktop, type **Git Bash**, and select it from the results. 
 
    ![Git](media/26-08-2024(1).png)
 
