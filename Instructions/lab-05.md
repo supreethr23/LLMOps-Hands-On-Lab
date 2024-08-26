@@ -294,7 +294,7 @@ After UAT tests in the **qa** environment confirm that the application is ready 
 
 ## Summary
 
-In this lab, you have performed  the following tasks:
+In this lab, you have performed the following tasks:
 
 - Bootstrapped a New Project
 - Delivered a New Feature

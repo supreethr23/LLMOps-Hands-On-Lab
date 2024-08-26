@@ -45,7 +45,7 @@ By the end of this lab, you will be able to:
 
    ![clone1](media/26-08-2024(5).png)
 
-5. Run the following command to clone the Azure OpenAI Benchmarking Tool repository with:
+5. Run the following command to clone the Azure OpenAI Benchmarking Tool repository:
 
    ```bash
    git clone https://github.com/Azure/azure-openai-benchmark
@@ -53,30 +53,46 @@ By the end of this lab, you will be able to:
 
    ![clone1](media/26-08-2024(2).png)
 
-6. Navigate to the **azure-openai-benchmark** directory and install the required libraries:
+1. Run the following command to install the necessary python libraries for azure-openai-benchmark:
 
    ```bash
    pip install -r azure-openai-benchmark/requirements.txt
    ```
 
-7. Rename the `benchmark.parameters.template` file to `benchmark.parameters`:
+7. Run the following command to rename the file name `benchmark.parameters.template` to `benchmark.parameters`
 
    ```bash
    mv benchmark.parameters.template benchmark.parameters
    ```
 
    ![clone1](media/26-08-2024(6).png)
-   
 
-8. Navigate to [ai.azure.com](https://ai.azure.com) and sign in. Open **Projects**, then **Deployments**. Find your `gpt-35-turbo-16k` deployment and copy the following details:
+1. Navigate to [Azure portal](portal.azure.com). In the search box, type **Resource groups** and select it from the results.
 
-   - **Azure OpenAI API key**
-   - **Azure OpenAI resource name**
-   - **Azure OpenAI deployment name**
+   ![clone1](media/26-08-2024(7).png)
 
-   Store these details in a notepad.
+1. Open the **llm-ops-<inject key="Deployment-ID" enableCopy="false"/>** resource group and click on **odl_user_<inject key="Deployment-ID" enableCopy="false"/>_ai** to open the Azure AI hub.
 
-9. Run the following commands to open the code editor: 
+   ![clone1](media/26-08-2024(9).png)
+
+1. Click on **Launch Azure AI Studio**.
+
+   ![clone1](media/26-08-2024(8).png)
+
+1. Once the studio is opened, go to **Deployments (1)** under Shared resources and click on **gpt-35-turbo-16k** model deployment.
+
+   ![clone1](media/26-08-2024(10).png)
+
+1. Copy the following details and store in a notepad.
+
+
+   - **Azure OpenAI deployment name (1)**
+   - **Azure OpenAI resource name (2)**
+   - **Azure OpenAI API key (3)**
+
+      ![clone1](media/26-08-2024(11).png)
+
+9. Run the following command to open the repo in code editor: 
 
    ```bash
    code .
@@ -91,7 +107,7 @@ By the end of this lab, you will be able to:
     TEST_NAME=paygo-gpt35-eastus-4RPM
     ```
 
-    ![connectionstring](media/coconntstrings2.png)
+    ![clone1](media/26-08-2024(12).png)
 
 ## Task 02: Running the Performance Test
 
@@ -101,30 +117,40 @@ By the end of this lab, you will be able to:
    bash ./runtest.sh
    ```
 
-   > **Note:** The test may take 1-2 minutes to complete.
+   > **Note:** The test may take 2-3 minutes to complete.
 
-   ![runtest](media/test1.2.png)
+   ![clone1](media/26-08-2024(13).png)
 
-2. **Adjust Deployment Quota**: In Azure AI Studio, go to the `gpt-35-turbo-16k` deployment, click **Edit**, and increase the quota to 200K Tokens per Minute Rate Limit.
+2. Navigate to `gpt-35-turbo-16k` deployment, click **Edit**, and increase the quota to 200K Tokens per Minute Rate Limit.
 
-   ![deploymentupdate](media/connection2.png)
+   ![clone1](media/26-08-2024(14).png)
 
-3. **Rerun the Test with Updated Parameters**: Update the `benchmark.parameters` file:
-   - Change the `TEST_NAME` to `paygo-gpt35-eastus-50RPM`.
+1. Navigate to **Visual Studio Code** and change TEST_NAME to **paygo-gpt35-eastus-50RPM** in the benchmark.parameters file.
 
-   Execute the test again:
+1. Run the test again, and you will now see heavy load traffic going to the model.
 
    ```bash
    bash ./runtest.sh
    ```
 
-   You have now updated the benchmark parameters and executed the performance tests.
-
-
 ## Task 03: Analyzing the Results
 
-1. **Run the Analysis Notebook**: Open the `benchmark_analysis.ipynb` file in Visual Studio Code. Execute each code snippet step by step and observe the output to analyze the performance results.
+1. Open the `benchmark_analysis.ipynb` file in Visual Studio Code. Execute each code snippet step by step and observe the output to analyze the performance results.
 
-   ![deploymentupdate](media/output1.png)
+   ![clone1](media/26-08-2024(15).png)
 
----
+   ![clone1](media/26-08-2024(16).png)
+
+   ![clone1](media/26-08-2024(17).png)
+
+## Summary
+
+In this lab, you have performed the following tasks:
+
+- Bootstrap a new project for LLM performance testing.
+- Set up the Azure OpenAI Benchmarking Tool.
+- Execute load tests on an Azure OpenAI deployment.
+- Analyze and interpret the results of the load tests.
+
+### You have successfully completed the lab.
+
