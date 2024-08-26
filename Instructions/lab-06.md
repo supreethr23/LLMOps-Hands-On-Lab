@@ -19,7 +19,7 @@ By the end of this lab, you will be able to:
 
 1. To open Git Bash, click on Search from the VM desktop, type **Git Bash**, and select it from the results. 
 
-   ![Git](media/Git.png)
+   ![Git](media/26-08-2024(1).png)
 
 2. In Git Bash, run the following command to clone the workshop repository:
 
@@ -27,7 +27,7 @@ By the end of this lab, you will be able to:
    git clone https://github.com/microsoft/llmops-workshop.git
    ```
 
-   ![clone1](media/gitclone1.png)
+   ![clone1](media/26-08-2024(3).png)
 
 3. Navigate to the Performance Lab directory where you cloned the repository:
 
@@ -35,17 +35,23 @@ By the end of this lab, you will be able to:
    cd llmops-workshop/labs/performance
    ```
 
+   ![clone1](media/26-08-2024(4).png)
+
 4. Run the following command to install the necessary Python libraries:
 
    ```bash
    pip install -r requirements.txt
    ```
 
+   ![clone1](media/26-08-2024(5).png)
+
 5. Run the following command to clone the Azure OpenAI Benchmarking Tool repository with:
 
    ```bash
    git clone https://github.com/Azure/azure-openai-benchmark
    ```
+
+   ![clone1](media/26-08-2024(2).png)
 
 6. Navigate to the **azure-openai-benchmark** directory and install the required libraries:
 
@@ -58,6 +64,9 @@ By the end of this lab, you will be able to:
    ```bash
    mv benchmark.parameters.template benchmark.parameters
    ```
+
+   ![clone1](media/26-08-2024(6).png)
+   
 
 8. Navigate to [ai.azure.com](https://ai.azure.com) and sign in. Open **Projects**, then **Deployments**. Find your `gpt-35-turbo-16k` deployment and copy the following details:
 
