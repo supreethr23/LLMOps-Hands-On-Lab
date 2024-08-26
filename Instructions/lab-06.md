@@ -52,7 +52,7 @@ By the end of this lab, you will be able to:
 
    ![clone1](media/26-08-2024(2).png)
 
-1. Run the following command to install the necessary python libraries for azure-openai-benchmark:
+1. Run the following command to install the necessary Python libraries for azure-openai-benchmark:
 
    ```bash
    pip install -r azure-openai-benchmark/requirements.txt
@@ -70,7 +70,7 @@ By the end of this lab, you will be able to:
 
    ![clone1](media/26-08-2024(7).png)
 
-1. Open the **llm-ops-<inject key="Deployment-ID" enableCopy="false"/>** resource group and click on **odl_user_<inject key="Deployment-ID" enableCopy="false"/>_ai** to open the Azure AI hub.
+1. Open the **llm-ops-<inject key="Deployment-ID" enableCopy="false"/>** resource group and click on **odl_user_<inject key="Deployment-ID" enableCopy="false"/>_ai** Azure AI hub.
 
    ![clone1](media/26-08-2024(9).png)
 
@@ -78,11 +78,11 @@ By the end of this lab, you will be able to:
 
    ![clone1](media/26-08-2024(8).png)
 
-1. Once the studio is opened, go to **Deployments (1)** under Shared resources and click on **gpt-35-turbo-16k** model deployment.
+1. Once the studio is opened, go to **Deployments (1)** under Shared resources and click on **gpt-35-turbo-16k (2)** model deployment.
 
    ![clone1](media/26-08-2024(10).png)
 
-1. Copy the following details and store in a notepad.
+1. Copy the following details and store them in a notepad.
 
    - **Azure OpenAI deployment name (1)**
    - **Azure OpenAI resource name (2)**
@@ -90,7 +90,7 @@ By the end of this lab, you will be able to:
 
       ![clone1](media/26-08-2024(11).png)
 
-9. Run the following command to open the repo in code editor: 
+9. Run the following command to open the repo in the code editor: 
 
    ```bash
    code .
@@ -154,4 +154,3 @@ In this lab, you have performed the following tasks:
 - Analyze and interpret the results of the load tests.
 
 ### You have successfully completed the lab.
-
