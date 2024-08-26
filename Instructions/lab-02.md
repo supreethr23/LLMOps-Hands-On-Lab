@@ -168,7 +168,6 @@ After completing this lab, you will be able to complete the following tasks:
 
    ![](media/multi-rag-flow-chat-box.png)
 
-
 ## Summary
 
 In this lab, you have performed  the following tasks:
