@@ -104,7 +104,7 @@ After completing this lab, you will be able to complete the following tasks:
    code .
    ```
 
-10. In the `benchmark.parameters` file, replace the first four lines with your values:
+10. In the `benchmark.parameters` file, replace the first four lines with the values which you copied in step number 14.
 
     ```bash
     export OPENAI_API_KEY=[Your Azure OpenAI API key]
