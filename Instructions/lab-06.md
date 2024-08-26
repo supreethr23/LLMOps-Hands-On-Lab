@@ -119,17 +119,21 @@ By the end of this lab, you will be able to:
 
    ![clone1](media/26-08-2024(13).png)
 
-2. Navigate to `gpt-35-turbo-16k` deployment, click **Edit**, and increase the quota to 200K Tokens per Minute Rate Limit.
+2. Go to the `gpt-35-turbo-16k` deployment, click **Edit**, increase the quota to **200K Tokens per Minute Rate Limit**, and then select **Save and close**.
 
    ![clone1](media/26-08-2024(14).png)
 
 1. Navigate to **Visual Studio Code** and change TEST_NAME to **paygo-gpt35-eastus-50RPM** in the benchmark.parameters file.
+
+   ![clone1](media/26-08-2024(18).png)
 
 1. Run the test again, and you will now see heavy load traffic going to the model.
 
    ```bash
    bash ./runtest.sh
    ```
+
+   ![clone1](media/26-08-2024(13).png)
 
 ## Task 03: Analyzing the Results
 
