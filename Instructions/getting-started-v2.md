@@ -1,6 +1,6 @@
-# LLM-Ops Hands On Lab
+# LLM-Ops Hands-On Lab
 
-### Overall Estimated Duration: 4 hours
+### Overall Estimated Duration: 6 hours
 
 ## Overview
 
@@ -12,13 +12,13 @@ By implementing LLM-Ops with Azure OpenAI and prompt flows, Contoso effectively 
 
 The objective of these hands-on labs is to provide a comprehensive understanding of leveraging Large Language Models (LLMs) through Azure AI Services. Participants will start with an introduction to LLMs and Azure's AI capabilities, followed by the creation of orchestration flows for effectively managing and integrating these models. The labs will then cover the evaluation and deployment processes, ensuring that models are optimized and ready for production. Finally, participants will focus on monitoring the performance of LLMs and implementing responsible AI practices, addressing ethical considerations and ensuring adherence to best practices for AI deployment.
 
-1. **Introduction to LLMs and Azure AI Services:** This hands-on aims for the particpants to gain foundational knowledge of Large Language Models and Azure's AI capabilities for leveraging advanced AI solutions.
+1. **Introduction to LLMs and Azure AI Services:** This hands-on aims for the participants to gain foundational knowledge of Large Language Models and Azure's AI capabilities for leveraging advanced AI solutions.
 
-1. **Building LLMs Orchestration Flows:** This hands-on aims for the particpants to learn to create and manage orchestration flows to effectively integrate and operate LLMs within applications.
+1. **Building LLMs Orchestration Flows:** This hands-on aims for the participants to learn to create and manage orchestration flows to effectively integrate and operate LLMs within applications.
 
-1. **Evaluating and Deploying LLMs:** This hands-on aims for the particpants to acquire skills to assess model performance and deploy LLMs to production environments for real-world use.
+1. **Evaluating and Deploying LLMs:** This hands-on aims for the participants to acquire skills to assess model performance and deploy LLMs to production environments for real-world use.
 
-1. **Monitoring and Responsible AI:** This hands-on aims for the particpants to understand how to monitor LLM performance and apply responsible AI practices to ensure ethical and effective use of AI technologies.
+1. **Monitoring and Responsible AI:** This hands-on aims for the participants to understand how to monitor LLM performance and apply responsible AI practices to ensure ethical and effective use of AI technologies.
 
 ## Prerequisites
 
@@ -26,7 +26,7 @@ Participants should have: Basic knowledge and understanding of the following
 
 - Familiarity with AI concepts and machine learning fundamentals to grasp LLM operations and their applications.
 - Experience with Azure cloud services, including how to navigate the Azure portal and utilize Azure's AI and machine learning offerings.
-- Basic knowledge in programming languages commonly used with AI models, such as Python, for interacting with APIs and building solutions.
+- Basic knowledge of programming languages commonly used with AI models, such as Python, for interacting with APIs and building solutions.
 - Understanding of data handling and management practices, as LLMs require data for training, evaluation, and deployment.
 - Basic knowledge of responsible AI practices and ethical considerations to ensure the models are used appropriately and ethically.
 
@@ -131,7 +131,4 @@ Now, click on **Next** from the lower right corner to move on to the next page.
 
 ![](media/lab-next.png)
 
-### Happy Learning!!
-
-   
- 
+### Happy Learning!
