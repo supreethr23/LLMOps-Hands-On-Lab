@@ -26,13 +26,14 @@ In this section, you will learn how to start a new project using a project templ
 
     ![Environments Page](media/powershell.png)
 
-1. On the **Getting started** pop-up select the following options to create the storage account:
+1. On the **Getting Started** pop-up select the following options to create the storage account:
 
     - Select **Mount storage account (1)**
     - Subscription: **Select your subscription (2)**
     - Select **Apply (3)**
 
         ![Environments Page](media/getting-started-01.png)
+
    - On **Mount storage account** pop-up, select **I want to create a storage account (1)**. Select **Next (2)**.
      
         ![Environments Page](media/mount-storage-account.png)
@@ -129,18 +130,18 @@ In this section, you will learn how to start a new project using a project templ
         > 2. **What is your preferred protocol for Git operations?**: select **HTTPS**
         > 3. **Authenticate Git with your GitHub credentials?**: select **Yes**
         > 4. **How would you like to authenticate GitHub CLI?**: select **Login with a web browser**
-        > 5. First copy your one-time code
+        > 5. First, copy your one-time code
         > 6. Press Enter to open github.com in your browser. 
         > 7. Press **CTRL and Click** on the following link: https://github.com/login/device.
         > 8. On the **Device Activation** page, select **Continue**.
         ![](media/github-continue.png)
-        > 9. Paste your activation code that you copied from the Azure CLI page.
+        > 9. Paste the activation code that you copied from the Azure CLI page.
         > 10. On the **Authorize GitHub CLI** page, select **Authorize github**.
         > 11. Navigate back to the **Azure CLI** you'll see that you are logged in.
 
 1. Run the Bootstrap Script. Run the appropriate script for your environment.
 
-    ```powershell
+    ```PowerShell
     .\bootstrap.ps1
     ```
 
@@ -154,7 +155,7 @@ In this section, you will learn how to start a new project using a project templ
     | `AZURE_LOCATION`| <inject key="Location"></inject>|
     | `AZURE_SUBSCRIPTION_ID`| your-subscription-id|
 
-1. Open GitHub with the credentials, select **Settings**. From the left navigation pane select **Environments**, after creating the variables and secret, your Environments page should resemble the following example:
+1. Open GitHub with the credentials, and select **Settings**. From the left navigation pane select **Environments**, after creating the variables and secret, your Environments page should resemble the following example:
    
    ![Environments Page](media/bootstrapping_environments.png)
    
@@ -162,7 +163,7 @@ In this section, you will learn how to start a new project using a project templ
    
    ![Environment Variables](media/bootstrapping_env_vars.png)
    
-1. Select `AZURE_CREDENTIALS` secret for three environments: `dev`, `qa`, and `prod`, paste the format as follows, and update the values according to it:
+1. Select the `AZURE_CREDENTIALS` secret for three environments: `dev`, `qa`, and `prod`, paste the format as follows, and update the values according to it:
     
    ```json
    {
@@ -221,13 +222,13 @@ The workflow starts by creating a feature branch named `feature/feature_x` from 
 
 1. Make non-disruptive changes to the repository. For instance, create a file `FEATUREX.md` in the project root:
 
-    ```powershell
+    ```PowerShell
     New-Item -ItemType File -Name "FEATUREX.md"
     ```
 
     ![Git Workflow](media/githubrepo.png)
 
-This ensures the new feature is developed in isolation, maintaining the integrity of the project's `develop` branch and promptflow.
+This ensures the new feature is developed in isolation, maintaining the integrity of the project's `develop` branch and prompt flow.
 
 ### Task 03: Pull Request (PR) to `develop`
 
@@ -300,4 +301,3 @@ In this lab, you have performed the following tasks:
 - Delivered a New Feature
 
 ### You have successfully completed the lab.
-
