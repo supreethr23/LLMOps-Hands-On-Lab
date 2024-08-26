@@ -117,7 +117,7 @@ After completing this lab, you will be able to complete the following tasks:
 
 ## Task 02: Running the Performance Test
 
-1. Run the following command to start the test:
+1. Return back to Git and run the following command to start the test
 
    ```bash
    bash ./runtest.sh
