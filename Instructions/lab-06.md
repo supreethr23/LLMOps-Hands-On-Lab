@@ -86,7 +86,7 @@ By the end of this lab, you will be able to:
 
    ![clone1](media/26-08-2024(20).png)
 
-1. Leave the value as default, click on **Deploy**.
+1. Leave the value as default, and click on **Deploy**.
 
    ![clone1](media/26-08-2024(22).png)
 
