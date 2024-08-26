@@ -157,8 +157,8 @@ After completing this lab, you will be able to complete the following tasks:
 
 In this lab, you have performed the following tasks:
 
-- Set up the Azure OpenAI Benchmarking Tool.
-- Execute load tests on an Azure OpenAI deployment.
-- Analyze and interpret the results of the load tests.
+- Set up the Azure OpenAI Benchmarking Tool
+- Executed load tests on an Azure OpenAI deployment
+- Analyzed and interpreted the results of the load tests
 
 ### You have successfully completed the lab.
