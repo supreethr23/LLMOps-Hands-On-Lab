@@ -39,16 +39,13 @@ After completing this lab, you will be able to complete the following tasks:
 
 1. On the **Create a Hub** section, configure the below values.
 
-   - Subscription: **Select your default subscription (2)**
-   - Resource group: **llm-ops-<inject key="Deployment-ID" enableCopy="false"/>** **(3)**
-   - Location: **<inject key="Region" enableCopy="false"/>** **(4)**
    - Hub name: **odl_user_<inject key="Deployment-ID" enableCopy="false"/>_ai**
    - Subscription: **Select your Default Subscription**
    - Resource group: **llm-ops-<inject key="Deployment-ID" enableCopy="false"/>**
    - Location: **<inject key="Region" enableCopy="false"/>**
    - Connect Azure AI Service or Azure OpenAI: **(new)ai-odl-user_<inject key="Deployment-ID" enableCopy="false"/>_ai**
 
-   ![](media/create-new-hub.png)
+      ![](media/create-new-hub.png)
 
 1. Click on **Create new AI Search (1)** for the **Connect Azure AI Search** option. Enter the **name (2)** for your **Azure AI Search** and click on **Create**.
 
