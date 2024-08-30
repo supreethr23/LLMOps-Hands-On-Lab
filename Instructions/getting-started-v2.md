@@ -20,7 +20,7 @@ The objective of these hands-on labs is to provide a comprehensive understanding
 
 1. **Monitoring and Responsible AI:** This hands-on aims for the participants to understand how to monitor LLM performance and apply responsible AI practices to ensure ethical and effective use of AI technologies.
 
-1. **Automation:** This hands-on session guides participants in setting up a new project and overseeing the delivery of a feature, focusing on project setup, implementation, testing, and communication with stakeholders.
+1. **Automating Everything:** This hands-on session guides participants in setting up a new project and overseeing the delivery of a feature, focusing on project setup, implementation, testing, and communication with stakeholders.
 
 1. **LLM Performance Testing:** This hands-on lab guides participants through setting up, executing, and analyzing load tests on an Azure OpenAI model deployment to assess performance under different scenarios.
 
