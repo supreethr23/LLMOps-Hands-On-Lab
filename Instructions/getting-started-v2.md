@@ -40,6 +40,8 @@ Participants should have: Basic knowledge and understanding of the following
 
 Azure AI Studio provides a comprehensive architecture for managing and deploying Large Language Models (LLMs). **Azure OpenAI Service** offers access to advanced LLMs like GPT-4 for text generation and natural language processing. **Azure Cognitive Services** integrates additional AI capabilities such as text analytics to enhance model functionality. **Azure AI Studio resources** include the **Hub** for centralized management, **Projects** for organizing AI workflows, and **Prompt Flow Types** for creating and optimizing interactions with LLMs. **Deployments** facilitate the transition of models from development to production. This integrated architecture supports building, evaluating, and managing LLMs while ensuring efficient and scalable AI solutions.
 
+![Architecture](media/architecture1.png)
+
 ## Explanation of Components
 
 - **Azure OpenAI Service:** Provides access to advanced language models, such as GPT-3.5, for tasks like text generation, translation, and question answering, enabling sophisticated natural language processing capabilities in applications.
