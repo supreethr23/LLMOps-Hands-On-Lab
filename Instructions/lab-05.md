@@ -1,4 +1,4 @@
-# Lab 05: Automating
+# Lab 05: Automating Everything
 
 ### Estimated Duration: 60 minutes
 
